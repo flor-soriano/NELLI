@@ -1,0 +1,92 @@
+{
+ "version": "v2",
+ "fecha": "2026-10-28",
+ "nota": "Texto escrito por personas. La IA solo llena huecos ({dice_ser}, {dominio}). Teléfonos solo si se confirmaron en la página oficial (por eso no hay).",
+ "tipos": {
+  "banco_phishing": {
+   "prueba": "Tu banco nunca te pide validar datos, NIP o código por una liga. Su página real es la que viene atrás de tu tarjeta.",
+   "paso": "No abras la liga. Llama al número de atrás de tu tarjeta y pregunta.",
+   "ya_cai": "Llama ya al banco (número de atrás de la tarjeta) y pide bloquear tarjeta y cambiar claves. Después levanta la queja en CONDUSEF. No es tu culpa: estos mensajes están hechos para engañar."
+  },
+  "paqueteria": {
+   "prueba": "Las paqueterías no cobran «aduana» ni «dirección incompleta» por una liga en un mensaje.",
+   "paso": "No pagues nada por la liga. Si esperas un paquete, rastrea con tu número de guía en la página oficial de la paquetería.",
+   "ya_cai": "Si pagaste con tarjeta, llama al banco para bloquearla. Guarda la captura del mensaje para reportar."
+  },
+  "sat_impuestos": {
+   "prueba": "El SAT no manda avisos ni devoluciones por mensaje con liga: todo pasa por el Buzón Tributario.",
+   "paso": "No abras la liga. Si tienes duda, entra tú a sat.gob.mx desde el navegador.",
+   "ya_cai": "Cambia tu contraseña del SAT desde sat.gob.mx y avisa a tu contador. Si diste datos de tarjeta, llama al banco."
+  },
+  "servicios_cfe": {
+   "prueba": "La CFE no cobra por mensaje ni pide depósitos a cuentas personales.",
+   "paso": "No deposites. Revisa tu recibo en la app o página oficial de la CFE.",
+   "ya_cai": "Si depositaste, pide a tu banco rastrear la transferencia y guarda el comprobante para la denuncia."
+  },
+  "premio_sorteo": {
+   "prueba": "Nadie gana un sorteo en el que no participó; un premio real nunca cobra para entregarlo.",
+   "paso": "No contestes ni pagues. Bórralo.",
+   "ya_cai": "Si pagaste, llama al banco. Si diste datos personales, vigila tus cuentas los próximos días."
+  },
+  "prestamo_facil": {
+   "prueba": "Un préstamo real nunca pide dinero por adelantado ni «sacarte del Buró» con un pago.",
+   "paso": "No pagues anticipos. Si necesitas crédito, busca la institución en el SIPRES de CONDUSEF.",
+   "ya_cai": "Si descargaste una app, bórrala y cambia tus contraseñas. Si te acosan, guarda capturas y repórtalo."
+  },
+  "inversion_cripto": {
+   "prueba": "Ningún rendimiento está garantizado; prometerlo es ilegal en México (CONDUSEF).",
+   "paso": "No deposites. Si te interesa invertir, busca la institución en el SIPRES de CONDUSEF.",
+   "ya_cai": "Deja de depositar aunque te prometan «recuperar». Guarda todo y repórtalo en CONDUSEF."
+  },
+  "familiar_en_apuro": {
+   "prueba": "Quien cambia de número y pide dinero con prisa casi siempre es alguien que se hace pasar por tu familiar.",
+   "paso": "Cuelga o no contestes. Llama a la persona a su número de siempre.",
+   "ya_cai": "Avisa a tu familia. Si depositaste, pide a tu banco rastrear la transferencia y denuncia."
+  },
+  "extorsion": {
+   "prueba": "Los extorsionadores usan miedo y prisa; piden que no cuelgues ni avises a nadie.",
+   "paso": "Cuelga. Llama a tu familiar a su número de siempre. Avisa a alguien de confianza.",
+   "ya_cai": "No estás solo. Denuncia a la Policía Cibernética de tu estado (busca el número en su página oficial)."
+  },
+  "codigo_whatsapp": {
+   "prueba": "WhatsApp dice que el código de 6 dígitos no se comparte con nadie, ni con familiares.",
+   "paso": "No lo mandes. Si ya lo pediste tú, úsalo solo tú.",
+   "ya_cai": "Vuelve a registrar tu número en WhatsApp con tu código nuevo y activa la verificación en dos pasos. Avisa a tus contactos."
+  },
+  "empleo_falso": {
+   "prueba": "Un empleo real no cobra por entrar ni paga por dar «me gusta».",
+   "paso": "No pagues ni mandes documentos. Busca la empresa en su página oficial.",
+   "ya_cai": "Si pagaste, llama al banco. Si mandaste tu INE, vigila tus cuentas y considera un reporte en Buró."
+  },
+  "aviso_falso_meta": {
+   "prueba": "Meta no avisa por mensaje que una página será desactivada con una liga para «apelar»; los avisos aparecen dentro de la app.",
+   "paso": "No abras la liga. Revisa el estado de tu cuenta dentro de Facebook o Instagram.",
+   "ya_cai": "Cambia tu contraseña desde la app, cierra las sesiones que no reconozcas y activa la verificación en dos pasos."
+  },
+  "compra_venta": {
+   "prueba": "Un vendedor que solo acepta anticipo y mete prisa casi siempre desaparece después del pago.",
+   "paso": "No des anticipo. Paga contra entrega o por una plataforma con protección al comprador.",
+   "ya_cai": "Guarda capturas y comprobante; repórtalo en la plataforma y en la Policía Cibernética."
+  },
+  "otro": {
+   "prueba": "",
+   "paso": "Si te pide dinero o datos, confirma por otro lado antes de hacer nada.",
+   "ya_cai": "Guarda capturas, cambia contraseñas y avisa a alguien de confianza."
+  },
+  "ninguno": {
+   "prueba": "",
+   "paso": "Si te pide dinero o datos, confirma por otro lado.",
+   "ya_cai": ""
+  },
+  "multa_falsa": {
+   "prueba": "Las multas reales no se pagan por una liga que llega en un mensaje con prisa; se consultan en la página oficial de tu ciudad o estado.",
+   "paso": "No pagues por la liga. Consulta tu placa en la página oficial de finanzas de tu ciudad o estado.",
+   "ya_cai": "Si pagaste, guarda el comprobante y pide a tu banco rastrear la transferencia. Consulta la multa real en la página oficial."
+  },
+  "soporte_falso": {
+   "prueba": "Apple, Google, Microsoft y Meta no piden contraseñas ni códigos por mensaje o llamada para «reactivar» una cuenta.",
+   "paso": "No ingreses tus datos. Abre tú la app o la página oficial de la cuenta y revisa ahí su estado.",
+   "ya_cai": "Cambia tu contraseña desde la página oficial, cierra las sesiones que no reconozcas y activa la verificación en dos pasos."
+  }
+ }
+}

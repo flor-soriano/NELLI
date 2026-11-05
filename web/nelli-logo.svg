@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nelli">
+  <!-- Sello Nelli: escudo-tinta con N de papel y garita ámbar. Propio, no es logo de Meta/Facebook/WhatsApp. -->
+  <path d="M32 3 10 10v22c0 14.5 9.2 24.4 22 29 12.8-4.6 22-14.5 22-29V10L32 3z" fill="#1b1713"/>
+  <path d="M32 7.2 14 13v19c0 11.9 7.4 20.2 18 24.4C42.6 52.2 50 43.9 50 32V13L32 7.2z" fill="none" stroke="#c98a1b" stroke-width="2"/>
+  <path d="M22 44V20l20 24V20" fill="none" stroke="#fffefa" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="m27 35 4 4 9-10" fill="none" stroke="#e8a317" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,3 @@
+paquete-mx/*.json text eol=lf
+skills/*.md text eol=lf
+src/nelli/esquema/*.json text eol=lf

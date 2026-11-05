@@ -1,0 +1,306 @@
+/* Nelli · estilos compartidos de web/, feed/ y blindar.
+   Reglas: letra grande, español de casa, nunca verde, nunca porcentajes.
+   Letra del sistema: la página no llama a ningún servidor de fuentes y funciona sin internet.
+
+   Piel sobre el logotipo oficial: grafito #15191D, blanco y el rombo menta #4FDFA3.
+   Claro por defecto. Oscuro si el teléfono está en modo oscuro (o con el botón: web/tema.js pone
+   data-tema="claro|oscuro" en <html>). El menta es solo marca y foco: nunca un nivel, porque
+   verde diría «seguro». Nunca azul Facebook ni verde WhatsApp (docs/piel-nelli.md). */
+
+:root {
+  color-scheme: light;
+  --grafito: #15191D;          /* el fondo del logotipo; fijo en los dos modos */
+  --blanco: #ffffff;
+  --menta: #4fdfa3;            /* el rombo del logo */
+
+  --tinta: #15191D;            /* el color que manda: botones, bordes fuertes, chips activos */
+  --tinta-texto: #ffffff;      /* lo que va escrito sobre la tinta */
+  --fondo: #f2f4f7;
+  --fondo-exterior: #e3e6ea;   /* alrededor del feed en pantallas anchas */
+  --superficie: #ffffff;
+  --superficie-suave: #eceff3;
+  --texto: #0b0e11;
+  --texto-suave: #5f6670;
+  --borde: #e1e4e8;
+  --accion: var(--tinta);
+  --accion-oscuro: #0b0e11;
+  --accion-texto: var(--tinta-texto);
+  --foco: #15191D;
+
+  --ambar: #b45309;
+  --ambar-fondo: #fff1dc;
+  --ambar-borde: #f0c98a;
+  --ambar-texto: #6b3a00;
+  --sello: #8a6100;            /* el sello «Prototipo no afiliado» */
+
+  /* Niveles: rojo, ámbar oscuro, ámbar y gris. Nunca verde. */
+  --nivel-confirmado: #c62828;
+  --nivel-confirmado-fondo: #fdecec;
+  --nivel-muy: #9a4a00;
+  --nivel-muy-fondo: #fdecd6;
+  --nivel-posible: #8a6100;
+  --nivel-posible-fondo: #fdf3cf;
+  --nivel-gris: #4b5563;
+  --nivel-gris-fondo: #eceff3;
+
+  --aviso-feed: #b45309;
+  --aviso-feed-fondo: #fff1dc;
+  --aviso-feed-texto: #6b3a00;
+
+  --radio: 16px;
+  --sombra: 0 6px 24px rgba(21, 25, 29, .16);
+  --sombra-suave: 0 2px 10px rgba(21, 25, 29, .07);
+  --letra-titulo: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --letra: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Modo oscuro: el grafito del logo. Entra solo con el teléfono en oscuro o con el botón. */
+@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) { --modo-oscuro: 1; } }
+:root[data-tema="oscuro"] { --modo-oscuro: 1; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    color-scheme: dark;
+    --tinta: #ffffff; --tinta-texto: #15191D;
+    --fondo: #0f1114; --fondo-exterior: #000000; --superficie: #15191D; --superficie-suave: #1e242b;
+    --texto: #ffffff; --texto-suave: #aeb6bf; --borde: #2a3139;
+    --accion-oscuro: #ffffff; --foco: #4fdfa3;
+    --ambar: #ffb04a; --ambar-fondo: #2a2114; --ambar-borde: #5a4420; --ambar-texto: #ffe3b8; --sello: #ffd86b;
+    --nivel-confirmado: #ff7a74; --nivel-confirmado-fondo: #3a1a19;
+    --nivel-muy: #ffb04a; --nivel-muy-fondo: #2a2114;
+    --nivel-posible: #ffd86b; --nivel-posible-fondo: #2a2416;
+    --nivel-gris: #aeb6bf; --nivel-gris-fondo: #1e242b;
+    --aviso-feed: #ffb04a; --aviso-feed-fondo: #2a2114; --aviso-feed-texto: #ffe3b8;
+    --sombra: 0 6px 24px rgba(0, 0, 0, .5); --sombra-suave: 0 2px 10px rgba(0, 0, 0, .35);
+  }
+}
+:root[data-tema="oscuro"] {
+  color-scheme: dark;
+  --tinta: #ffffff; --tinta-texto: #15191D;
+  --fondo: #0f1114; --fondo-exterior: #000000; --superficie: #15191D; --superficie-suave: #1e242b;
+  --texto: #ffffff; --texto-suave: #aeb6bf; --borde: #2a3139;
+  --accion-oscuro: #ffffff; --foco: #4fdfa3;
+  --ambar: #ffb04a; --ambar-fondo: #2a2114; --ambar-borde: #5a4420; --ambar-texto: #ffe3b8; --sello: #ffd86b;
+  --nivel-confirmado: #ff7a74; --nivel-confirmado-fondo: #3a1a19;
+  --nivel-muy: #ffb04a; --nivel-muy-fondo: #2a2114;
+  --nivel-posible: #ffd86b; --nivel-posible-fondo: #2a2416;
+  --nivel-gris: #aeb6bf; --nivel-gris-fondo: #1e242b;
+  --aviso-feed: #ffb04a; --aviso-feed-fondo: #2a2114; --aviso-feed-texto: #ffe3b8;
+  --sombra: 0 6px 24px rgba(0, 0, 0, .5); --sombra-suave: 0 2px 10px rgba(0, 0, 0, .35);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--fondo); color: var(--texto);
+  font-family: var(--letra); font-size: 21px; line-height: 1.55;
+}
+h1, h2, h3 { font-family: var(--letra-titulo); font-weight: 800; letter-spacing: -.01em; line-height: 1.2; margin: 0; }
+button, input, textarea { font: inherit; }
+:focus-visible { outline: 4px solid var(--foco); outline-offset: 3px; }
+.oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.icono { width: 1.2em; height: 1.2em; flex: none; vertical-align: -0.2em; }
+
+/* ---------- Botones ---------- */
+.boton {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; min-height: 64px; padding: 14px 18px; border-radius: 14px; touch-action: manipulation;
+  border: 2px solid var(--accion); background: var(--superficie); color: var(--accion);
+  font-weight: 700; font-size: 22px; cursor: pointer; text-decoration: none; text-align: center;
+  transition: background-color .15s ease, transform .15s ease;
+}
+.boton:active { transform: scale(.98); }
+.boton-principal { background: var(--accion); color: var(--accion-texto); }
+.boton-rojo { background: var(--nivel-confirmado); border-color: var(--nivel-confirmado); color: #fff; }
+:root[data-tema="oscuro"] .boton-rojo { color: #15191D; }
+@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) .boton-rojo { color: #15191D; } }
+
+/* ---------- Tarjeta ---------- */
+.tarjeta { background: var(--superficie); border-radius: var(--radio); overflow: hidden; }
+.tarjeta-cabeza { display: flex; gap: 14px; align-items: flex-start; padding: 22px 20px 18px; border-bottom: 1px solid var(--borde); }
+.tarjeta-cabeza .icono { width: 40px; height: 40px; }
+.tarjeta-etiqueta { font-size: 34px; font-weight: 800; letter-spacing: -.01em; }
+.tarjeta-sub { margin: 4px 0 0; font-size: 18px; opacity: .9; }
+
+.nivel-fraude_confirmado .tarjeta-cabeza { background: var(--nivel-confirmado-fondo); color: var(--nivel-confirmado); }
+.nivel-muy_probablemente_fraude .tarjeta-cabeza { background: var(--nivel-muy-fondo); color: var(--nivel-muy); }
+.nivel-posible_fraude .tarjeta-cabeza { background: var(--nivel-posible-fondo); color: var(--nivel-posible); }
+.nivel-sin_senales_claras .tarjeta-cabeza,
+.nivel-no_pude_revisar .tarjeta-cabeza,
+.nivel-negativa .tarjeta-cabeza { background: var(--nivel-gris-fondo); color: var(--nivel-gris); }
+
+.tarjeta-cuerpo { padding: 8px 20px 20px; }
+.tarjeta h3 { font-size: 20px; margin: 20px 0 10px; color: var(--texto); }
+
+.puntos { list-style: none; margin: 0; padding: 0; }
+.punto { display: flex; gap: 12px; padding: 12px 0; border-top: 1px solid var(--borde); }
+.punto:first-child { border-top: 0; }
+.punto-marca {
+  flex: none; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+  font-weight: 800; font-family: var(--letra-titulo);
+}
+.punto-ok .punto-marca { background: var(--superficie-suave); color: var(--texto); }
+.punto-alerta .punto-marca { background: var(--nivel-confirmado-fondo); color: var(--nivel-confirmado); }
+.punto-no_revisado .punto-marca { background: var(--nivel-gris-fondo); color: var(--nivel-gris); }
+.punto-titulo { font-weight: 700; display: block; }
+.punto-texto { display: block; color: var(--texto); }
+.punto-no_revisado .punto-texto { color: var(--nivel-gris); }
+
+.paso {
+  margin-top: 18px; padding: 16px 18px; border-radius: 14px; background: var(--ambar-fondo); color: var(--texto);
+  border-left: 6px solid var(--ambar); font-size: 21px; font-weight: 600;
+}
+.paso small { display: block; font-size: 16px; font-weight: 800; color: var(--ambar); letter-spacing: .04em; text-transform: uppercase; }
+
+.fuente { display: flex; gap: 12px; align-items: flex-start; margin-top: 18px; padding: 14px 16px; border: 1px solid var(--borde); border-radius: 14px; }
+.fuente .icono { width: 30px; height: 30px; color: var(--texto-suave); }
+.fuente-cita { margin: 6px 0 0; font-style: italic; }
+.fuente a { color: var(--texto); word-break: break-word; }
+
+.ligas { margin-top: 18px; padding: 14px 16px; border-radius: 14px; background: var(--nivel-gris-fondo); }
+.ligas code { display: block; font-size: 18px; word-break: break-all; color: var(--texto); font-family: ui-monospace, Consolas, monospace; }
+.ligas p { margin: 0 0 6px; font-size: 18px; }
+
+.botones { display: grid; gap: 12px; margin-top: 22px; }
+.panel { margin-top: 12px; padding: 16px; border-radius: 14px; background: var(--ambar-fondo); border: 1px solid var(--ambar-borde); }
+.panel[hidden] { display: none; }
+.panel p { margin: 0 0 10px; }
+
+.nota-ejemplo { margin: 0; padding: 10px 20px; background: var(--nivel-gris-fondo); color: var(--nivel-gris); font-size: 17px; font-weight: 600; }
+
+.licencia { margin-top: 20px; font-size: 15px; color: var(--texto-suave); line-height: 1.4; }
+
+/* ---------- Capa encima (se abre sin salir) ---------- */
+.capa { position: fixed; inset: 0; background: rgba(0, 0, 0, .55); display: flex; align-items: flex-end; justify-content: center; z-index: 50; }
+.capa[hidden] { display: none; }
+.capa-caja { width: 100%; max-width: 560px; max-height: 92vh; overflow-y: auto; border-radius: 20px 20px 0 0; background: var(--superficie); box-shadow: var(--sombra); }
+.capa-cerrar {
+  position: sticky; top: 0; display: flex; justify-content: flex-end; padding: 8px 8px 0; background: transparent; z-index: 2;
+}
+.capa-cerrar button { min-width: 48px; min-height: 48px; border: 0; border-radius: 50%; background: var(--superficie-suave); color: var(--texto); cursor: pointer; font-size: 28px; line-height: 1; }
+
+@media (min-width: 600px) { .capa { align-items: center; } .capa-caja { border-radius: 20px; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ---------- Menú entre pantallas (prototipo) y botón de modo ---------- */
+.menu { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 14px; font-size: 17px; }
+.menu a { border: 2px solid var(--tinta); border-radius: 999px; padding: 7px 14px; color: var(--tinta); font-weight: 600; text-decoration: none; background: var(--superficie); }
+.menu a[aria-current] { background: var(--tinta); color: var(--tinta-texto); }
+.boton-tema, .boton-idioma {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 14px 6px 10px;
+  border: 2px solid var(--borde); border-radius: 999px; background: var(--superficie); color: var(--texto);
+  font-size: 16px; font-weight: 700; cursor: pointer; touch-action: manipulation;
+}
+.boton-tema { margin-left: auto; }
+/* Los dos botones (modo e idioma) viajan juntos a la derecha y, si no caben, bajan juntos */
+.menu .ajustes { display: flex; gap: 8px; margin-left: auto; }
+.menu .ajustes .boton-tema { margin-left: 0; }
+.boton-tema::before { content: ''; width: 18px; height: 18px; border-radius: 50%; flex: none; background: var(--grafito); box-shadow: inset 0 0 0 2px var(--superficie), 0 0 0 2px var(--menta); }
+.boton-tema.es-oscuro::before { background: var(--blanco); }
+/* Botón de idioma (web/idioma.js): dice el idioma al que cambia; la marca es el mismo aro menta del botón de modo */
+.boton-idioma { padding-left: 12px; }
+.boton-idioma::before { content: 'EN'; font-size: 11px; font-weight: 800; letter-spacing: .04em; line-height: 1; padding: 3px 4px; border-radius: 5px; flex: none; color: var(--grafito); background: var(--superficie); box-shadow: 0 0 0 2px var(--menta); }
+.boton-idioma[lang="es"]::before { content: 'ES'; }
+:root[data-tema="oscuro"] .boton-idioma::before { color: var(--blanco); background: var(--grafito); }
+@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) .boton-idioma::before { color: var(--blanco); background: var(--grafito); } }
+
+/* ---------- Cabecera propia Nelli (no es barra de ninguna red) ---------- */
+.cabecera-nelli {
+  display: grid; grid-template-columns: 1fr auto; grid-template-areas: 'logo sello' 'lema lema';
+  align-items: center; column-gap: 14px; row-gap: 6px;
+  background: var(--superficie); color: var(--texto); border-bottom: 1px solid var(--borde); border-radius: 0 0 18px 18px;
+  border-top: 5px solid var(--menta);   /* el menta del rombo del logo: acento de marca, no un nivel */
+  padding: 14px 18px 12px; margin: 0 -16px 18px; box-shadow: var(--sombra-suave);
+}
+.cabecera-nelli h1, .cabecera-nelli > div { display: contents; }
+.cabecera-nelli .logotipo { grid-area: logo; height: 40px; width: auto; max-width: 100%; justify-self: start; }
+.cabecera-nelli .logo-oscuro { display: none; }
+.cabecera-nelli .lema { grid-area: lema; display: block; font-family: var(--letra); font-size: 16px; font-weight: 600; color: var(--texto-suave); margin: 0; }
+.sello-prototipo {
+  grid-area: sello; flex: none; max-width: 200px;
+  border: 2px dashed var(--sello); border-radius: 6px; padding: 5px 9px;
+  color: var(--sello); font-size: 12px; font-weight: 800; letter-spacing: .05em;
+  text-transform: uppercase; line-height: 1.3; text-align: center;
+}
+:root[data-tema="oscuro"] .cabecera-nelli .logo-claro { display: none; }
+:root[data-tema="oscuro"] .cabecera-nelli .logo-oscuro { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) .cabecera-nelli .logo-claro { display: none; }
+  :root:not([data-tema="claro"]) .cabecera-nelli .logo-oscuro { display: block; }
+}
+.tarjeta { border-top: 8px solid var(--tinta); }
+.nivel-fraude_confirmado { border-top-color: var(--nivel-confirmado); }
+.nivel-muy_probablemente_fraude { border-top-color: var(--nivel-muy); }
+.nivel-posible_fraude { border-top-color: var(--nivel-posible); }
+
+/* ---------- Diseño para mayores (docs/diseno-mayores.md) ---------- */
+.caminos { display: grid; gap: 12px; margin: 0 0 20px; }
+.camino {
+  display: flex; gap: 14px; align-items: center; text-align: left; width: 100%;
+  min-height: 72px; padding: 14px 18px; border-radius: 16px; cursor: pointer;
+  border: 3px solid var(--tinta); background: var(--superficie); color: var(--texto);
+  font-size: 22px; font-weight: 700; touch-action: manipulation;
+}
+.camino small { display: block; font-size: 18px; font-weight: 600; color: var(--texto-suave); }
+.camino .icono { width: 34px; height: 34px; color: var(--texto); }
+.sin-miedo {
+  margin: 0 0 20px; padding: 16px 18px; border-radius: 14px; color: var(--texto);
+  background: var(--ambar-fondo); border: 2px solid var(--ambar); font-size: 20px; font-weight: 600;
+}
+.boton-escuchar { margin-bottom: 14px; }
+.paso-guia { display: flex; align-items: center; gap: 10px; font-family: var(--letra-titulo); font-size: 24px; font-weight: 800; margin: 22px 0 10px; }
+.paso-guia::before { content: ''; flex: none; width: 12px; height: 12px; border-radius: 3px; background: var(--menta); transform: rotate(45deg); }
+
+.potencia-muse {
+  margin: 0 0 16px; padding: 12px 16px; border-radius: 12px; text-align: center;
+  background: var(--grafito); color: var(--menta); font-weight: 800; font-size: 19px; letter-spacing: .04em;
+  border: 1px solid var(--borde); border-left: 6px solid var(--menta);
+}
+.potencia-muse span { display: block; color: #ffffff; font-size: 17px; font-weight: 600; letter-spacing: 0; }
+
+/* ---------- Escritorio PC (móvil manda abajo de 960px) ---------- */
+@media (min-width: 960px) {
+  body .pagina { max-width: 1220px; padding: 24px 36px 64px; }
+  .cabecera-nelli { margin: 0 0 20px; padding: 20px 28px 16px; grid-template-columns: auto 1fr auto; grid-template-areas: 'logo lema sello'; column-gap: 28px; }
+  .cabecera-nelli .logotipo { height: 56px; }
+  .cabecera-nelli .lema { font-size: 20px; }
+  .sello-prototipo { font-size: 14px; max-width: 300px; }
+  .menu a { min-height: 56px; display: inline-flex; align-items: center; font-size: 20px; }
+  .boton-tema, .boton-idioma { min-height: 56px; font-size: 18px; }
+
+  /* Revisar: izquierda trae el mensaje, derecha lo pega y lo revisa */
+  .pagina-revisar { display: grid; grid-template-columns: 440px 1fr; column-gap: 36px; align-items: start; }
+  .pagina-revisar > .menu, .pagina-revisar > .cabecera-nelli { grid-column: 1 / -1; }
+  .pagina-revisar > .sin-miedo { grid-column: 1; }
+  .pagina-revisar > .potencia-muse { grid-column: 1; margin: 0; }
+  .pagina-revisar > .paso-guia:first-of-type { grid-column: 1; }
+  .pagina-revisar > .caminos { grid-column: 1; grid-template-columns: 1fr; }
+  .pagina-revisar > form { grid-column: 2; grid-row: 3 / span 4; background: var(--superficie);
+    border: 2px solid var(--borde); border-top: 8px solid var(--tinta); border-radius: 18px; padding: 26px 28px; }
+  .pagina-revisar > #resultado, .pagina-revisar > .ejemplos, .pagina-revisar > p:last-of-type { grid-column: 1 / -1; }
+  .pagina-revisar #resultado .tarjeta { max-width: 820px; margin: 0 auto; }
+  .pagina-revisar .ejemplos ul { grid-template-columns: repeat(3, 1fr); }
+
+  /* Feed: dos columnas de publicaciones */
+  body .app { max-width: 1220px; }
+  .app main { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 18px; align-items: start; }
+  .app .publicacion { margin: 0; border: 2px solid var(--borde); border-radius: 18px; overflow: hidden; }
+
+  /* Blindar: pasos en dos columnas */
+  .pagina-blindar .pasos { grid-template-columns: 1fr 1fr; }
+  .pagina-blindar .insignia { max-width: 760px; }
+}
+
+/* ---------- Amigable (docs/inspiracion-interfaz.md) ---------- */
+.revision-hero { display:flex; gap:18px; align-items:center; background:var(--superficie);
+  border:2px solid var(--borde); border-top:8px solid var(--ambar); border-radius:20px; padding:18px 20px; margin:0 0 18px; }
+.revision-hero img { width:92px; height:92px; flex:none; border-radius:16px; background:var(--grafito); }
+.revision-hero strong { font-family:var(--letra-titulo); font-size:27px; display:block; }
+.por-que { color: var(--ambar) !important; font-weight:700; }
+.hazlo { background:var(--superficie-suave); border-radius:10px; padding:8px 12px; }
+.medidor { display:flex; gap:6px; padding:16px 20px 0; }
+.medidor i { flex:1; height:12px; border-radius:99px; background:var(--nivel-gris-fondo); }
+.medidor i.on-confirmado{background:var(--nivel-confirmado)} .medidor i.on-muy{background:var(--nivel-muy)}
+.medidor i.on-posible{background:var(--nivel-posible)} .medidor i.on-gris{background:var(--nivel-gris)}
+.ya-cai { margin-top:26px; background:var(--nivel-confirmado-fondo); border:2px solid var(--nivel-confirmado); border-radius:18px; padding:18px 20px; }
+.ya-cai h2 { font-size:26px; margin-bottom:8px; } .ya-cai ol { margin:8px 0 0; padding-left:26px; } .ya-cai li { margin:8px 0; }
+.tarjeta, .camino, .paso-item, .publicacion { box-shadow: var(--sombra-suave); }

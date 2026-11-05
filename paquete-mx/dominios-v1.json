@@ -1,0 +1,33 @@
+{
+  "version": "v1",
+  "fecha": "2026-10-26",
+  "nota": "Lista oficial de dominios · paquete MX. Cada fila lleva fuente y fecha. `verificado: true` SOLO cuando una persona comprobó el dominio en la página oficial o en el SIPRES de CONDUSEF y anotó la URL. Mientras una fila no esté verificada, imitarla da «Muy probablemente es fraude», nunca «Fraude confirmado». Las filas `demo: true` son instituciones inventadas para la demo.",
+  "filas": [
+    {"institucion": "Banco Real (inventado para la demo)", "sector": "banco", "dominios": ["bancoreal.com"], "marca": ["bancoreal"], "fuente": "inventado para la demo; no existe", "fecha": "2026-10-26", "verificado": true, "demo": true},
+    {"institucion": "WhatsApp (Meta)", "sector": "meta", "dominios": ["whatsapp.com", "wa.me", "whatsapp.net"], "marca": ["whatsapp"], "fuente": "https://www.whatsapp.com — pendiente anotar la página exacta", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Facebook (Meta)", "sector": "meta", "dominios": ["facebook.com", "fb.com", "fb.me", "messenger.com"], "marca": ["facebook", "faceb00k"], "fuente": "https://www.facebook.com — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Meta", "sector": "meta", "dominios": ["meta.com", "metamail.com"], "marca": ["metabusiness", "metasupport", "meta-support", "meta-business"], "fuente": "https://about.meta.com — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Instagram (Meta)", "sector": "meta", "dominios": ["instagram.com"], "marca": ["instagram"], "fuente": "https://www.instagram.com — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "CONDUSEF", "sector": "gobierno", "dominios": ["condusef.gob.mx", "gob.mx"], "marca": ["condusef"], "fuente": "https://www.condusef.gob.mx — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "SAT", "sector": "gobierno", "dominios": ["sat.gob.mx", "gob.mx"], "marca": ["sat-gob", "satgob", "sat-mx", "satmexico"], "fuente": "https://www.sat.gob.mx — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "IMSS", "sector": "gobierno", "dominios": ["imss.gob.mx", "gob.mx"], "marca": ["imss"], "fuente": "https://www.imss.gob.mx — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "CFE", "sector": "servicios", "dominios": ["cfe.mx", "cfe.gob.mx"], "marca": ["cfe-", "cfemx", "cfe.", "cferecibo", "cfepago"], "fuente": "https://www.cfe.mx — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Infonavit", "sector": "gobierno", "dominios": ["infonavit.org.mx", "gob.mx"], "marca": ["infonavit"], "fuente": "https://portalmx.infonavit.org.mx — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "BBVA México", "sector": "banco", "dominios": ["bbva.mx", "bbva.com"], "marca": ["bbva", "bancomer"], "fuente": "SIPRES/CONDUSEF — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Banorte", "sector": "banco", "dominios": ["banorte.com"], "marca": ["banorte"], "fuente": "SIPRES/CONDUSEF — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Santander México", "sector": "banco", "dominios": ["santander.com.mx"], "marca": ["santander"], "fuente": "SIPRES/CONDUSEF — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Citibanamex / Banamex", "sector": "banco", "dominios": ["banamex.com", "citibanamex.com"], "marca": ["banamex", "citibanamex"], "fuente": "SIPRES/CONDUSEF — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "HSBC México", "sector": "banco", "dominios": ["hsbc.com.mx"], "marca": ["hsbc"], "fuente": "SIPRES/CONDUSEF — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Scotiabank México", "sector": "banco", "dominios": ["scotiabank.com.mx"], "marca": ["scotiabank"], "fuente": "SIPRES/CONDUSEF — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Banco Azteca", "sector": "banco", "dominios": ["bancoazteca.com.mx"], "marca": ["bancoazteca"], "fuente": "SIPRES/CONDUSEF — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "BanCoppel", "sector": "banco", "dominios": ["bancoppel.com"], "marca": ["bancoppel"], "fuente": "SIPRES/CONDUSEF — pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Mercado Pago / Mercado Libre", "sector": "fintech", "dominios": ["mercadopago.com.mx", "mercadolibre.com.mx", "mercadopago.com", "mercadolibre.com"], "marca": ["mercadopago", "mercadolibre"], "fuente": "pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Nu México", "sector": "fintech", "dominios": ["nu.com.mx"], "marca": ["nubank", "nu-mx"], "fuente": "pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "DHL", "sector": "paqueteria", "dominios": ["dhl.com", "dhl.com.mx"], "marca": ["dhl"], "fuente": "pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "FedEx", "sector": "paqueteria", "dominios": ["fedex.com"], "marca": ["fedex"], "fuente": "pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Estafeta", "sector": "paqueteria", "dominios": ["estafeta.com"], "marca": ["estafeta"], "fuente": "pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Amazon México", "sector": "comercio", "dominios": ["amazon.com.mx", "amazon.com"], "marca": ["amazon"], "fuente": "pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Telcel", "sector": "servicios", "dominios": ["telcel.com"], "marca": ["telcel"], "fuente": "pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false},
+    {"institucion": "Netflix", "sector": "comercio", "dominios": ["netflix.com"], "marca": ["netflix"], "fuente": "pendiente", "fecha": "2026-10-26", "verificado": false, "demo": false}
+  ]
+}

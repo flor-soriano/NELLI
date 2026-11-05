@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" data-t-content="man.descripcion" content="Manual sencillo de Nelli: cómo revisar un mensaje sospechoso en 3 pasos, qué significa cada resultado y qué hacer si ya caíste.">
+<title data-t="man.titulo">Nelli · Manual sencillo de uso</title>
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="../web/icono-grafito.png">
+<script src="../web/tema.js"></script>
+<script src="../web/idioma.js"></script>
+<link rel="stylesheet" href="../web/nelli.css">
+<style>
+  .pagina { max-width: 560px; margin: 0 auto; padding: 16px 16px 48px; }
+  .manual h1 { font-size: 34px; margin: 6px 0 10px; }
+  .manual h2 { font-size: 27px; margin: 28px 0 10px; }
+  .manual p, .manual li { font-size: 21px; }
+  .manual ol, .manual ul { padding-left: 26px; } .manual li { margin: 10px 0; }
+  .tabla { width: 100%; border-collapse: collapse; font-size: 19px; margin: 10px 0; }
+  .tabla th, .tabla td { border: 2px solid var(--borde); padding: 10px 12px; text-align: left; background: var(--superficie); }
+  .tabla th { background: var(--grafito); color: #ffffff; }
+  .foto-manual { width: 100%; height: auto; border-radius: 16px; border: 2px solid var(--borde); margin: 12px 0; }
+  @media (min-width: 960px) { body .pagina { max-width: 860px; } }
+  @media print { .menu, .boton-tema, .boton-idioma, .cabecera-nelli .sello-prototipo { display: none; } body { background: #fff; } }
+</style>
+</head>
+<body>
+<main class="pagina manual">
+  <nav class="menu" data-t-aria="menu.aria" aria-label="Pantallas del prototipo">
+    <a href="../web/index.html" data-t="menu.revisar">Revisar</a>
+    <a href="../feed/index.html" data-t="menu.feed">El feed</a>
+    <a href="../web/blindar.html" data-t="menu.blindar">Blindar mi cuenta</a>
+    <a href="../web/manual.html" aria-current="page" data-t="menu.manual">Manual</a>
+    <span class="ajustes">
+      <button type="button" class="boton-tema" data-tema-boton>Modo oscuro</button>
+      <button type="button" class="boton-idioma" data-idioma-boton lang="en">English</button>
+    </span>
+  </nav>
+  <header class="cabecera-nelli">
+    <img class="logotipo logo-claro" src="../web/logotipo-grafito.png" alt="Nelli" width="720" height="251">
+    <img class="logotipo logo-oscuro" src="../web/logotipo-blanco.png" alt="Nelli" width="720" height="251">
+    <span class="lema" data-t="man.lema">Manual sencillo de uso</span>
+    <span class="sello-prototipo"><span data-t="comun.sello">Prototipo no afiliado</span><br>Not a Meta product</span>
+  </header>
+
+  <h1 data-t="man.h1">Cómo usar Nelli, sin saber de computación</h1>
+  <p><span data-t="man.intro.1">Te llegó un mensaje que te pide dinero, datos o entrar a una liga y no sabes si es verdad. </span><strong data-t="man.intro.b">Antes de hacer nada, pregúntale a Nelli.</strong><span data-t="man.intro.2"> No necesitas cuenta, no cuesta y tu mensaje no se guarda.</span></p>
+  <img class="foto-manual" src="../feed/img/familia.png" data-t-alt="man.foto1.alt" alt="Una señora mirando su celular con preocupación en su cocina" width="1024" height="1024">
+
+  <h2 data-t="man.paso1">Paso 1 · Trae el mensaje</h2>
+  <ol>
+    <li><strong data-t="man.paso1.a.b">Pegar el texto:</strong><span data-t="man.paso1.a"> copia el mensaje y pégalo en el cuadro grande.</span></li>
+    <li><strong data-t="man.paso1.b.b">Subir una foto:</strong><span data-t="man.paso1.b"> manda la captura de tu pantalla.</span></li>
+    <li><strong data-t="man.paso1.c.b">Mandar una nota de voz:</strong><span data-t="man.paso1.c"> manda el audio que te llegó.</span></li>
+  </ol>
+  <h2 data-t="man.paso2">Paso 2 · Toca el botón grande</h2>
+  <p><span data-t="man.paso2.1">Toca </span><strong data-t="man.paso2.b">«Revisar el mensaje»</strong><span data-t="man.paso2.2"> y espera unos segundos. La liga no se abre en un navegador y tu mensaje no se guarda: se manda solo a la IA de Meta (Muse) para leerlo.</span></p>
+  <h2 data-t="man.paso3">Paso 3 · Lee o escucha tu tarjeta</h2>
+  <p><span data-t="man.paso3.1">Arriba va el resultado en letras grandes. Abajo, </span><strong data-t="man.paso3.b">un solo paso a seguir</strong><span data-t="man.paso3.2">: haz solo eso. Si prefieres, toca </span><strong data-t="man.paso3.b2">«Escuchar el resultado»</strong><span data-t="man.paso3.3"> y te lo leemos en voz alta.</span></p>
+  <img class="foto-manual" src="../feed/img/multa.png" data-t-alt="man.foto2.alt" alt="Manos sosteniendo un celular dentro de un carro" width="1024" height="1024">
+
+  <h2 data-t="man.niveles">Qué significa cada resultado</h2>
+  <table class="tabla">
+    <tr><th data-t="man.th.dice">Lo que dice</th><th data-t="man.th.haces">Qué haces</th></tr>
+    <tr><td><strong data-t="man.n1">Fraude confirmado</strong></td><td data-t="man.n1.h">No entres a la liga. Reporta y bloquea.</td></tr>
+    <tr><td><strong data-t="man.n2">Muy probablemente es fraude</strong></td><td data-t="man.n2.h">No pagues. Llama a la persona o al banco al número de siempre.</td></tr>
+    <tr><td><strong data-t="man.n3">Posible fraude</strong></td><td data-t="man.n3.h">Confirma por otro lado antes de hacer nada.</td></tr>
+    <tr><td><strong data-t="man.n4">No vemos señales claras</strong></td><td data-t="man.n4.h">No quiere decir que sea seguro. Si pide dinero o datos, confirma igual.</td></tr>
+    <tr><td><strong data-t="man.n5">No pude revisarlo</strong></td><td data-t="man.n5.h">Manda el texto o una captura más clara.</td></tr>
+  </table>
+
+  <section class="ya-cai">
+    <h2 data-t="man.yacai">Si ya caíste, respira</h2>
+    <ol>
+      <li data-t="man.yacai.1">No mandes más dinero, aunque te amenacen.</li>
+      <li data-t="man.yacai.2">Llama a tu banco al número de tu tarjeta y pide bloquear.</li>
+      <li data-t="man.yacai.3">Cuéntaselo a alguien de confianza hoy.</li>
+    </ol>
+  </section>
+
+  <h2 data-t="man.bl">Blindar tu cuenta en 7 minutos</h2>
+  <p><span data-t="man.bl.1">En </span><a href="../web/blindar.html" data-t="man.bl.liga">Blindar mi cuenta</a><span data-t="man.bl.2"> te llevamos paso a paso. Al terminar los 7 pasos recibes tu insignia de Cuenta blindada, hecha con Muse Image.</span></p>
+  <img class="foto-manual" src="../web/sello-3d.png" data-t-alt="man.sello.alt" alt="Sello de Nelli en tres dimensiones" width="900" height="900">
+
+  <h2 data-t="man.nunca">Lo que Nelli nunca hace</h2>
+  <ul>
+    <li data-t="man.nunca.1">Nunca abre en un navegador la liga que te mandaron.</li>
+    <li data-t="man.nunca.2">Nunca te dice «es seguro».</li>
+    <li data-t="man.nunca.3">Nunca te pide contraseñas, NIP ni códigos.</li>
+    <li data-t="man.nunca.4">No guarda tu mensaje.</li>
+  </ul>
+  <p><span data-t="man.pie">Hecho por una persona independiente en México, potenciado por Muse (Meta Model API). Nelli no es un producto de Meta. Manual completo en el repositorio: </span><em>docs/manual-uso.md</em>.</p>
+  <p><a class="boton boton-principal" href="../web/index.html" data-t="man.ir">Ir a revisar un mensaje</a></p>
+</main>
+</body>
+</html>

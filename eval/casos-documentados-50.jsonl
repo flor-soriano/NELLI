@@ -1,0 +1,50 @@
+{"id": "d01", "verdad": "fraude", "canal": "whatsapp", "texto": "Descargaste nuestra app y tienes un préstamo vencido de $2,800. Si hoy no pagas, avisamos a todos tus contactos que eres un ratero y les mandamos tu foto."}
+{"id": "d02", "verdad": "fraude", "canal": "whatsapp", "texto": "Te vamos a desmembrar a la familia si no pagas en 20 minutos."}
+{"id": "d03", "verdad": "fraude", "canal": "whatsapp", "texto": "Tu familiar tiene una deuda con nosotros y no paga. Es un ratero. Haz que pague o les va a ir mal a todos."}
+{"id": "d04", "verdad": "fraude", "canal": "sms", "texto": "ÚLTIMO AVISO. Su crédito está vencido. Si hoy no liquida, se procede al embargo de bienes y al bloqueo de sus cuentas. Despacho Jurídico Asociado."}
+{"id": "d05", "verdad": "fraude", "canal": "sms", "texto": "Liquida con 78% de descuento, solo hoy."}
+{"id": "d06", "verdad": "fraude", "canal": "sms", "texto": "Quedó radicada la demanda en su contra, expediente 4471. Evite el embargo presentándose a pagar hoy."}
+{"id": "d07", "verdad": "fraude", "canal": "whatsapp", "texto": "Habla el licenciado de la financiera. Su hijo debe $4,000 y si en una hora no deposita, vamos a su casa."}
+{"id": "d08", "verdad": "fraude", "canal": "feed", "texto": "Te prestamos $5,000 HOY sin buró. Para liberar deposita $250 de gestión."}
+{"id": "d09", "verdad": "fraude", "canal": "sms", "texto": "Cargo no reconocido en tu tarjeta. Para cancelarlo confirma tu contraseña y CVV en la liga."}
+{"id": "d10", "verdad": "fraude", "canal": "sms", "texto": "Tu transferencia de $8,500 quedó retenida por seguridad. Valida tus datos para liberarla: banca-movil-mx.lat"}
+{"id": "d11", "verdad": "fraude", "canal": "sms", "texto": "Tus 12,400 puntos vencen HOY. Canjéalos antes de perderlos: puntos-banco-mx.lat/canje"}
+{"id": "d12", "verdad": "fraude", "canal": "email", "texto": "Se detectó una irregularidad en su facturación. Descargue el CFDI adjunto y regularice su situación."}
+{"id": "d13", "verdad": "fraude", "canal": "sms", "texto": "Tiene un saldo a favor de $4,230. Registre su CLABE para recibir su devolución: sat-devolucion-mx.lat"}
+{"id": "d14", "verdad": "fraude", "canal": "sms", "texto": "Tienes una multa de tránsito por pagar. Evita recargos, paga hoy en la liga."}
+{"id": "d15", "verdad": "fraude", "canal": "sms", "texto": "Ya le depositamos su apoyo. Para liberarlo confirme los datos de su tarjeta en la liga."}
+{"id": "d16", "verdad": "fraude", "canal": "sms", "texto": "Su servicio será suspendido HOY por falta de pago. Pague su recibo aquí: cfe-pagos-mx.lat"}
+{"id": "d17", "verdad": "fraude", "canal": "whatsapp", "texto": "Perdón, te mandé por error mi código de 6 dígitos. ¿Me lo pasas?"}
+{"id": "d18", "verdad": "fraude", "canal": "whatsapp", "texto": "Hola mamá, cambié de número. Este es el nuevo."}
+{"id": "d19", "verdad": "fraude", "canal": "whatsapp", "texto": "¡Mamá, me tienen! No cuelgues, deposita de inmediato o me hacen daño."}
+{"id": "d20", "verdad": "fraude", "canal": "whatsapp", "texto": "Su hijo tuvo un accidente y está detenido. Mande $6,000 para la fianza o se lo llevan."}
+{"id": "d21", "verdad": "fraude", "canal": "sms", "texto": "¡Ganaste un iPhone! Solo paga $99 de envío en la liga para recibirlo."}
+{"id": "d22", "verdad": "fraude", "canal": "sms", "texto": "Tu paquete está retenido por dirección incompleta. Actualiza tus datos en la liga para entregarlo."}
+{"id": "d23", "verdad": "fraude", "canal": "feed", "texto": "Remate de iPhone, casi nuevo. Apártalo con $500 por transferencia y mañana te lo entrego."}
+{"id": "d24", "verdad": "fraude", "canal": "whatsapp", "texto": "Gana $600 diarios dando likes a videos. Empiezas hoy, sin experiencia."}
+{"id": "d25", "verdad": "fraude", "canal": "whatsapp", "texto": "Grupo VIP de criptomonedas: deposita $1,000 y retiras $2,000 en 24 horas. Solo hoy hay lugares."}
+{"id": "d26", "verdad": "fraude", "canal": "feed", "texto": "Depa amueblado $4,500 ya con servicios. Hay mucha gente interesada: apártalo con $500 y mañana lo ves."}
+{"id": "d27", "verdad": "fraude", "canal": "sms", "texto": "No pudimos cobrar tu suscripción y se cancelará hoy. Actualiza tu pago: streaming-pagos.lat"}
+{"id": "d28", "verdad": "legitimo", "dificil": true, "canal": "sms", "texto": "Tu recibo Telnor ya está disponible. Consúltalo en la app o en telnor.com."}
+{"id": "d29", "verdad": "legitimo", "dificil": true, "canal": "sms", "texto": "Compra aprobada por $1,240 en tienda con tu tarjeta terminación 4471. Si no la reconoces, llama al número que viene en tu tarjeta."}
+{"id": "d30", "verdad": "legitimo", "canal": "sms", "texto": "Tu pedido 4471 ya va en camino. Llega entre el 3 y el 5 de noviembre."}
+{"id": "d31", "verdad": "fraude", "canal": "whatsapp", "texto": "Mamá, tuve un accidente, deposítame ahorita."}
+{"id": "d32", "verdad": "fraude", "canal": "whatsapp", "texto": "Tenemos a tu hijo. No cuelgues y deposita de inmediato si lo quieres volver a ver."}
+{"id": "d33", "verdad": "fraude", "canal": "whatsapp", "texto": "Para proteger su cuenta instale esta aplicación que le mando. Es la app de seguridad del banco."}
+{"id": "d34", "verdad": "fraude", "canal": "whatsapp", "texto": "Soy de fraudes de su banco: su cuenta está en riesgo, mueva todo su dinero a esta cuenta segura."}
+{"id": "d35", "verdad": "fraude", "canal": "sms", "texto": "Banco: detectamos un movimiento raro. Valida tu identidad en la liga para evitar el bloqueo."}
+{"id": "d36", "verdad": "fraude", "canal": "desconocido", "texto": "Escanea el código QR de la mesa para pagar tu cuenta aquí."}
+{"id": "d37", "verdad": "fraude", "canal": "desconocido", "texto": "Para ver quién te mandó este paquete, escanea el QR e ingresa tus datos y tu tarjeta."}
+{"id": "d38", "verdad": "fraude", "canal": "whatsapp", "texto": "Tu familiar es un ratero y no paga. Si no paga hoy, mandamos su foto a todos sus contactos."}
+{"id": "d39", "verdad": "fraude", "canal": "whatsapp", "texto": "Ya ganaste $300. Para retirarlos sube a nivel VIP depositando $500."}
+{"id": "d40", "verdad": "fraude", "canal": "whatsapp", "texto": "Invierte conmigo en criptomonedas, yo te enseño. La plataforma es segura, tu dinero crece."}
+{"id": "d41", "verdad": "fraude", "canal": "whatsapp", "texto": "Soy tu tía, estoy en España, perdí mi pasaporte y mi bolsa. Mándame para el boleto, no le digas a nadie."}
+{"id": "d42", "verdad": "fraude", "canal": "email", "texto": "Su pariente falleció y le dejó una herencia. Para liberarla pague impuestos y gastos."}
+{"id": "d43", "verdad": "fraude", "canal": "feed", "texto": "Hay plazas en el IMSS y en la SEP. Aparta la tuya pagando tu examen y tu curso."}
+{"id": "d44", "verdad": "fraude", "canal": "whatsapp", "texto": "Tu familiar está en el quirófano. Chocó y está en cirugía. Deposite $9,000 a esta cuenta para operarlo ya."}
+{"id": "d45", "verdad": "fraude", "canal": "whatsapp", "texto": "Retenido un paquete a su nombre con droga. Pague la multa o se gira orden en su contra."}
+{"id": "d46", "verdad": "fraude", "canal": "email", "texto": "Su computadora tiene virus. Hable a soporte para limpiarla e instale el programa que le mandamos."}
+{"id": "d47", "verdad": "fraude", "canal": "sms", "texto": "Tu número pasará a otra compañía hoy. Si no fuiste tú, confirma tu identidad aquí."}
+{"id": "d48", "verdad": "fraude", "canal": "whatsapp", "texto": "Le llamamos de su banco. Para verificar que es usted, dígame el código que le llegó por SMS."}
+{"id": "d49", "verdad": "legitimo", "dificil": true, "canal": "sms", "texto": "DHL: tu envío ya va en camino. Puedes rastrearlo en dhl.com con tu número de guía."}
+{"id": "d50", "verdad": "legitimo", "dificil": true, "canal": "sms", "texto": "¿Reconoces la compra de $1,240? Responde SI o NO."}

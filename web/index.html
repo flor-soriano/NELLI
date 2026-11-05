@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" data-t-content="comun.descripcion" content="Nelli revisa mensajes, fotos y notas de voz sospechosas y te dice en palabras claras si parece fraude. Sin abrir ligas.">
+<meta name="format-detection" content="telephone=no">
+<title data-t="rev.titulo">Nelli · Verifica antes de creer, comprar o contestar</title>
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="../web/icono-grafito.png">
+<script src="../web/tema.js"></script>
+<script src="../web/idioma.js"></script>
+<link rel="stylesheet" href="../web/nelli.css">
+<style>
+  .pagina { max-width: 560px; margin: 0 auto; padding: 16px 16px 48px; }
+  .marca { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+  .marca h1 { font-size: 34px; }
+  .marca h1 span { display: block; font-family: var(--letra); font-size: 18px; font-weight: 600; color: var(--texto-suave); }
+  .etiqueta-prototipo { flex: none; font-size: 15px; font-weight: 700; color: var(--texto-suave); border: 1px solid var(--borde); border-radius: 999px; padding: 4px 12px; }
+  .burbuja { background: var(--superficie); border-radius: 4px 18px 18px 18px; padding: 16px 18px; box-shadow: var(--sombra); font-size: 21px; font-weight: 600; margin: 0 0 22px; }
+  label.titulo { display: block; font-weight: 700; margin: 0 0 8px; }
+  textarea, select { width: 100%; padding: 14px 16px; border: 2px solid var(--borde); border-radius: 14px; background: var(--superficie); font-size: 20px; color: var(--texto); }
+  textarea { min-height: 170px; resize: vertical; font-size: 22px; }
+  select { min-height: 68px; margin-bottom: 4px; font-size: 22px; }
+  textarea:focus, select:focus { border-color: var(--accion); }
+  .acciones { display: grid; gap: 12px; margin-top: 14px; }
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .dos .boton { font-size: 18px; }
+  input[type=file] { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  .archivo { margin: 0; font-size: 18px; color: var(--texto-suave); }
+  .archivo:empty { display: none; }
+  .previa { margin-top: 10px; }
+  .previa[hidden] { display: none; }
+  .previa .chip { display: inline-block; font-size: 14px; font-weight: 800; letter-spacing: 2px; border-radius: 999px; padding: 4px 14px; margin-bottom: 8px; }
+  .previa .chip.voz { background: var(--tinta); color: var(--tinta-texto); }
+  .previa .chip.cap { background: var(--ambar-fondo); color: var(--ambar-texto); border: 1px solid var(--ambar); }
+  .previa img { display: block; max-width: 100%; max-height: 220px; border-radius: 12px; border: 1px solid var(--borde); }
+  .previa audio { display: block; width: 100%; }
+  .previa .nom { font-size: 17px; color: var(--texto-suave); margin-top: 6px; }
+  .boton[disabled] { opacity: .6; cursor: progress; }
+  .aviso { margin: 18px 0 0; padding: 14px 16px; border-radius: 14px; background: var(--nivel-gris-fondo); }
+  .aviso[hidden] { display: none; }
+  #resultado { margin-top: 26px; scroll-margin-top: 12px; }
+  #resultado .tarjeta { box-shadow: var(--sombra); }
+  .ejemplos { margin-top: 34px; }
+  .ejemplos h2 { font-size: 22px; margin-bottom: 6px; }
+  .ejemplos p { margin: 0 0 12px; color: var(--texto-suave); font-size: 18px; }
+  .ejemplos ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .ejemplos .boton { justify-content: flex-start; text-align: left; font-weight: 600; }
+</style>
+</head>
+<body>
+<main class="pagina pagina-revisar">
+  <nav class="menu" data-t-aria="menu.aria" aria-label="Pantallas del prototipo">
+    <a href="../web/index.html" aria-current="page" data-t="menu.revisar">Revisar</a>
+    <a href="../feed/index.html" data-t="menu.feed">El feed</a>
+    <a href="../web/blindar.html" data-t="menu.blindar">Blindar mi cuenta</a>
+    <a href="../web/manual.html" data-t="menu.manual">Manual</a>
+    <span class="ajustes">
+      <button type="button" class="boton-tema" data-tema-boton>Modo oscuro</button>
+      <button type="button" class="boton-idioma" data-idioma-boton lang="en">English</button>
+    </span>
+  </nav>
+  <header class="cabecera-nelli">
+    <h1>
+      <img class="logotipo logo-claro" src="../web/logotipo-grafito.png" alt="Nelli" width="720" height="251">
+      <img class="logotipo logo-oscuro" src="../web/logotipo-blanco.png" alt="Nelli" width="720" height="251">
+      <span class="lema" data-t="comun.lema">Verifica antes de creer, comprar o contestar</span>
+    </h1>
+    <span class="sello-prototipo"><span data-t="comun.sello">Prototipo no afiliado</span><br>Not a Meta product</span>
+  </header>
+
+  <p class="sin-miedo"><span data-t="rev.calma">Tranquila, tranquilo: </span><strong data-t="rev.calma.b">no se abre la liga en un navegador, no se guarda tu mensaje y nadie te va a cobrar.</strong><span data-t="rev.calma.2"> Tú solo traes el mensaje; Nelli lo lee con la IA de Meta (Muse) y no lo guarda.</span></p>
+
+  <p class="potencia-muse"><b data-t="comun.muse">POTENCIADA POR MUSE</b><span data-t="comun.muse.sub">Hecha con la Meta Model API · Muse Spark lee, Muse Voice escucha, Muse Image ilustra</span></p>
+  <p class="aviso" id="aviso-emulador" hidden data-t="comun.emulador">Prueba sin llave: la parte de IA es una emulación local, no Muse. Con la llave de Meta en .env entra Muse de verdad.</p>
+  <h2 class="paso-guia" data-t="rev.paso1">Paso 1 · Trae el mensaje que te preocupa</h2>
+  <div class="caminos">
+    <button type="button" class="camino" data-camino="texto"><svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4l10-10-4-4L4 16v4z"/><path d="m13 7 4 4"/></svg><span><span data-t="rev.camino.texto">Pegar el texto</span><small data-t="rev.camino.texto.s">Copia el mensaje y pégalo abajo</small></span></button>
+    <button type="button" class="camino" data-camino="imagen"><svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-8 8"/></svg><span><span data-t="rev.camino.imagen">Subir una foto</span><small data-t="rev.camino.imagen.s">Una captura de tu pantalla</small></span></button>
+    <button type="button" class="camino" data-camino="audio"><svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg><span><span data-t="rev.camino.audio">Mandar una nota de voz</span><small data-t="rev.camino.audio.s">El audio que te mandaron</small></span></button>
+  </div>
+
+  <form id="forma" novalidate>
+    <h2 class="paso-guia" data-t="rev.paso2">Paso 2 · Pégalo aquí y toca el botón grande</h2>
+    <label class="titulo" for="texto" data-t="rev.texto.label">Pega aquí el mensaje o la liga</label>
+    <textarea id="texto" name="texto" autocomplete="off" spellcheck="false" data-t-placeholder="rev.texto.placeholder" placeholder="Pega el mensaje completo, con la liga tal como llegó"></textarea>
+    <div class="acciones">
+      <div>
+        <label class="titulo" for="canal" data-t="rev.canal">¿Por dónde te llegó?</label>
+        <select id="canal" name="canal">
+          <option value="whatsapp">WhatsApp</option>
+          <option value="sms" data-t="rev.canal.sms">Mensaje de texto (SMS)</option>
+          <option value="email" data-t="rev.canal.email">Correo</option>
+          <option value="messenger">Messenger</option>
+          <option value="feed" data-t="rev.canal.feed">Una publicación en redes</option>
+          <option value="web" selected data-t="rev.canal.otro">Otro</option>
+        </select>
+      </div>
+      <div class="dos">
+        <label class="boton" for="imagen" data-t="rev.subir">Subir captura</label>
+        <label class="boton" for="audio" data-t="rev.voz">Nota de voz</label>
+      </div>
+      <input id="imagen" type="file" accept="image/png,image/jpeg">
+      <input id="audio" type="file" accept="audio/*,.ogg,.opus,.mp3,.m4a,.wav,.flac,.amr,.webm,.aac,.3gp,.caf">
+      <p class="archivo" id="archivo" aria-live="polite"></p>
+      <div class="previa" id="previa" hidden></div>
+      <button class="boton boton-principal" id="revisar" type="submit" style="min-height:72px;font-size:24px">Revisar el mensaje</button>
+      <button class="boton" id="borrar" type="button" data-t="rev.borrar">Borrar y empezar de nuevo</button>
+    </div>
+  </form>
+
+  <p class="aviso" id="aviso" hidden aria-live="polite"></p>
+  <section id="resultado" aria-live="polite"></section>
+
+  <section class="ya-cai" aria-labelledby="titulo-ya-cai">
+    <h2 id="titulo-ya-cai" data-t="rev.yacai.t">Si ya caíste, respira. Tiene arreglo parcial y rápido:</h2>
+    <ol>
+      <li><strong data-t="rev.yacai.1b">No mandes más dinero</strong><span data-t="rev.yacai.1">, aunque te amenacen o te dé vergüenza.</span></li>
+      <li><strong data-t="rev.yacai.2b">Llama a tu banco desde el número de tu tarjeta</strong><span data-t="rev.yacai.2"> (no el del mensaje) y pide bloquear.</span></li>
+      <li><strong data-t="rev.yacai.3b">Cuéntaselo a alguien de confianza hoy.</strong><span data-t="rev.yacai.3"> El silencio es lo que más ayuda al estafador.</span></li>
+    </ol>
+  </section>
+
+  <section class="ejemplos" aria-labelledby="titulo-ejemplos">
+    <h2 id="titulo-ejemplos" data-t="rev.ejemplos.t">Ejemplos para probar</h2>
+    <p data-t="rev.ejemplos.p">Son mensajes inventados. Tócalos y Nelli los revisa.</p>
+    <ul id="lista-ejemplos"></ul>
+  </section>
+<p style="margin-top:28px;font-size:16px;color:var(--texto-suave)" data-t="comun.pie">Hecho con la Meta Model API (Muse Spark) · Built with the Meta Model API. Nelli es un proyecto independiente, no un producto de Meta.</p>
+</main>
+
+<script src="../web/tarjeta.js"></script>
+<script src="../web/ejemplos.js"></script>
+<script src="../web/ejemplos-en.js"></script>
+<script>
+(function () {
+  'use strict';
+  var T = Nelli.t;   // T('clave', 'español'): inglés si la página está en «English»
+  var forma = document.getElementById('forma');
+  var texto = document.getElementById('texto');
+  var canal = document.getElementById('canal');
+  var imagen = document.getElementById('imagen');
+  var audio = document.getElementById('audio');
+  var archivo = document.getElementById('archivo');
+  var revisar = document.getElementById('revisar');
+  var aviso = document.getElementById('aviso');
+  var resultado = document.getElementById('resultado');
+  var elegido = null;
+  var ultimoEjemplo = null;   // el ejemplo escrito a mano que está en pantalla, para repintarlo si cambia el idioma
+  function SIN_SERVIDOR() { return T('rev.js.sinServidor', 'El revisor no está prendido: esta página se abrió sin el servidor de Nelli y no revisé tu mensaje.'); }
+
+  function mostrar(tarjeta, nota) {
+    resultado.textContent = '';
+    resultado.appendChild(Nelli.dibujarTarjeta(tarjeta, nota));
+    resultado.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function avisar(msg) { aviso.textContent = msg; aviso.hidden = !msg; }
+
+  function ocupado(si) {
+    revisar.disabled = si;
+    revisar.textContent = si ? T('rev.js.revisando', 'Estoy revisando, espera un momento…') : T('rev.revisar', 'Revisar el mensaje');
+  }
+
+  var previa = document.getElementById('previa');
+
+  function pintarPrevia() {
+    previa.textContent = '';
+    if (!elegido) { previa.hidden = true; archivo.textContent = ''; return; }
+    var esVoz = elegido.campo === 'audio';
+    var chip = Nelli.h('span', { class: 'chip ' + (esVoz ? 'voz' : 'cap'), texto: esVoz ? T('rev.js.chip.voz', 'NOTA DE VOZ') : T('rev.js.chip.cap', 'CAPTURA') });
+    previa.appendChild(chip);
+    if (esVoz) {
+      var rep = document.createElement('audio');
+      rep.controls = true;
+      rep.src = elegido.url;
+      previa.appendChild(rep);
+      var nom = Nelli.h('p', { class: 'nom', texto: elegido.archivo.name });
+      rep.addEventListener('loadedmetadata', function () {
+        if (isFinite(rep.duration)) {
+          var seg = Math.round(rep.duration);
+          nom.textContent = elegido.archivo.name + ' · ' + Math.floor(seg / 60) + ':' + ('0' + (seg % 60)).slice(-2);
+        }
+      });
+      previa.appendChild(nom);
+    } else {
+      var img = document.createElement('img');
+      img.src = elegido.url;
+      img.alt = T('rev.js.tuCaptura', 'Tu captura: ') + elegido.archivo.name;
+      previa.appendChild(img);
+      previa.appendChild(Nelli.h('p', { class: 'nom', texto: elegido.archivo.name }));
+    }
+    archivo.textContent = esVoz ? T('rev.js.listaVoz', 'Lista para escuchar y revisar.') : T('rev.js.listaCap', 'Lista para leer y revisar.');
+    previa.hidden = false;
+  }
+
+  [imagen, audio].forEach(function (inp) {
+    inp.addEventListener('change', function () {
+      if (elegido && elegido.url) URL.revokeObjectURL(elegido.url);
+      elegido = inp.files[0] ? { campo: inp === imagen ? 'imagen' : 'audio', archivo: inp.files[0], url: URL.createObjectURL(inp.files[0]) } : null;
+      pintarPrevia();
+    });
+  });
+
+  document.querySelectorAll('[data-camino]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var c = b.getAttribute('data-camino');
+      if (c === 'texto') { texto.focus(); texto.scrollIntoView({ block: 'center' }); }
+      else if (c === 'imagen') imagen.click();
+      else audio.click();
+    });
+  });
+  document.getElementById('borrar').addEventListener('click', function () {
+    texto.value = '';
+    if (elegido && elegido.url) URL.revokeObjectURL(elegido.url);
+    elegido = null; imagen.value = ''; audio.value = ''; ultimoEjemplo = null;
+    pintarPrevia(); avisar(''); resultado.textContent = ''; texto.focus();
+  });
+
+  forma.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!texto.value.trim() && !elegido) { avisar(T('rev.js.falta', 'Pega el mensaje o sube una captura para poder revisarlo.')); texto.focus(); return; }
+    var cuerpo;
+    if (elegido) {
+      cuerpo = new FormData();
+      cuerpo.append(elegido.campo, elegido.archivo);
+      cuerpo.append('canal', canal.value);
+    } else {
+      cuerpo = { texto: texto.value, canal: canal.value };
+    }
+    var conArchivo = !!elegido;
+    var notaOrigen = !conArchivo ? null
+      : elegido.campo === 'audio' ? T('rev.js.origenVoz.1', 'Escuché tu nota de voz «') + elegido.archivo.name + T('rev.js.origenVoz.2', '» y la revisé. Ojo: todavía no distingo si la voz es humana o de computadora.')
+      : T('rev.js.origenCap.1', 'Leí tu captura «') + elegido.archivo.name + T('rev.js.origenCap.2', '» y la revisé.');
+    // En inglés, la tarjeta del motor sigue en español y se avisa arriba de ella
+    var notaMotor = T('tj.nota.motor', '');
+    if (notaMotor) notaOrigen = notaOrigen ? notaOrigen + ' ' + notaMotor : notaMotor;
+    resultado.textContent = ''; ultimoEjemplo = null;
+    avisar(!conArchivo ? '' : elegido.campo === 'audio' ? T('rev.js.escuchando', 'Estoy escuchando tu nota…') : T('rev.js.leyendo', 'Estoy leyendo tu captura…'));
+    ocupado(true);
+    Nelli.verificar(cuerpo)
+      .then(function (t) { mostrar(t, notaOrigen); })
+      .catch(function (err) {
+        resultado.textContent = '';
+        if (!err.respondio) avisar(SIN_SERVIDOR() + T('rev.js.sinServidor.2', ' Abajo puedes ver cómo contesta Nelli con los ejemplos.'));
+        else if (conArchivo) avisar(T('rev.js.sinLectura', 'Esta versión todavía no lee capturas ni notas de voz. Copia y pega el texto del mensaje.'));
+        else avisar(T('rev.js.noPude', 'No pude revisarlo: ') + err.message);
+      })
+      .then(function () { ocupado(false); });
+  });
+
+  // Un ejemplo se manda al motor; si no hay servidor, se enseña la tarjeta escrita a mano con su nota
+  function verEjemplo(ej) {
+    texto.value = ej.mensaje;
+    if (ej.canal) canal.value = ej.canal;
+    avisar('');
+    ultimoEjemplo = null;
+    if (ej.soloEjemplo) { ultimoEjemplo = ej.id; mostrar(ej.tarjeta, T('rev.js.ejemploCaptura', 'Ejemplo escrito a mano: así se ve cuando no se puede leer una captura.')); return; }
+    ocupado(true);
+    Nelli.verificar({ texto: ej.mensaje, canal: ej.canal || 'web' })
+      .then(function (t) { mostrar(t, T('tj.nota.motor', '') || null); })
+      .catch(function () { ultimoEjemplo = ej.id; mostrar(ej.tarjeta, T('js.ejemploSinServidor', 'Ejemplo escrito a mano: el revisor no está prendido.')); })
+      .then(function () { ocupado(false); });
+  }
+
+  // Si el motor corre con el emulador local (sin llave), se avisa: no es Muse
+  Nelli.salud().then(function (s) { document.getElementById('aviso-emulador').hidden = !(s && s.emulador); });
+
+  var lista = document.getElementById('lista-ejemplos');
+  function pintarEjemplos() {
+    lista.textContent = '';
+    Nelli.ejemplos().forEach(function (ej) {
+      var b = Nelli.h('button', { type: 'button', class: 'boton', texto: ej.nombre });
+      b.addEventListener('click', function () { verEjemplo(ej); });
+      lista.appendChild(Nelli.h('li', {}, b));
+    });
+  }
+  pintarEjemplos();
+
+  // Al cambiar de idioma se vuelve a escribir lo que dibuja este script
+  document.addEventListener('nelli-idioma', function () {
+    pintarEjemplos();
+    pintarPrevia();
+    if (!revisar.disabled) ocupado(false);
+    if (ultimoEjemplo) {
+      var ej = Nelli.ejemplos().filter(function (x) { return x.id === ultimoEjemplo; })[0];
+      if (ej) { texto.value = ej.mensaje; resultado.textContent = ''; resultado.appendChild(Nelli.dibujarTarjeta(ej.tarjeta,
+        ej.soloEjemplo ? T('rev.js.ejemploCaptura', 'Ejemplo escrito a mano: así se ve cuando no se puede leer una captura.') : T('js.ejemploSinServidor', 'Ejemplo escrito a mano: el revisor no está prendido.'))); }
+    }
+  });
+
+  // #ejemplo=multa-falsa abre ese ejemplo (sirve para el video y las capturas)
+  var m = location.hash.match(/ejemplo=([\w-]+)/);
+  if (m) {
+    var ej = Nelli.ejemplos().filter(function (x) { return x.id === m[1]; })[0];
+    if (ej) verEjemplo(ej);
+  }
+})();
+</script>
+</body>
+</html>

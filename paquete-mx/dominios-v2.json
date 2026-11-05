@@ -1,0 +1,1276 @@
+{
+ "version": "v2",
+ "fecha": "2026-10-28",
+ "nota": "Lista oficial v2: 78 instituciones de la lista del 27-oct + la lista del 28-oct con resguardo PDF. verificado:true solo con SIPRES, frase oficial anotada o resguardo del 28-oct. Resguardos armados (Santander desplegado, Banregio, BanBajío-seguridad) quedan pendientes de revisión humana en nunca-v2.",
+ "filas": [
+  {
+   "institucion": "Banco Real (inventado para la demo)",
+   "sector": "banco",
+   "dominios": [
+    "bancoreal.com"
+   ],
+   "marca": [
+    "bancoreal"
+   ],
+   "fuente": "inventado para la demo; no existe",
+   "fecha": "2026-10-26",
+   "verificado": true,
+   "demo": true
+  },
+  {
+   "institucion": "BBVA México",
+   "sector": "banco",
+   "dominios": [
+    "bbva.mx"
+   ],
+   "marca": [
+    "bancomer",
+    "bbva"
+   ],
+   "fuente": "https://www.bbva.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Banorte",
+   "sector": "banco",
+   "dominios": [
+    "banorte.com",
+    "banorte.com.mx"
+   ],
+   "marca": [
+    "banorte"
+   ],
+   "fuente": "https://www.banorte.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Santander México",
+   "sector": "banco",
+   "dominios": [
+    "santander.com.mx"
+   ],
+   "marca": [
+    "santander"
+   ],
+   "fuente": "https://www.santander.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Banamex",
+   "sector": "banco",
+   "dominios": [
+    "banamex.com",
+    "bancanet.banamex.com",
+    "banamex.com.mx"
+   ],
+   "marca": [
+    "banamex",
+    "bancanet",
+    "citibanamex"
+   ],
+   "fuente": "https://www.banamex.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "HSBC México",
+   "sector": "banco",
+   "dominios": [
+    "hsbc.com.mx"
+   ],
+   "marca": [
+    "hsbc"
+   ],
+   "fuente": "https://www.hsbc.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Scotiabank México",
+   "sector": "banco",
+   "dominios": [
+    "scotiabank.com.mx",
+    "ayuda.scotiabank.com.mx"
+   ],
+   "marca": [
+    "ayuda",
+    "scotiabank"
+   ],
+   "fuente": "https://www.scotiabank.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Inbursa",
+   "sector": "banco",
+   "dominios": [
+    "inbursa.com"
+   ],
+   "marca": [
+    "inbursa"
+   ],
+   "fuente": "https://www.inbursa.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Banco Azteca",
+   "sector": "banco",
+   "dominios": [
+    "bancoazteca.com.mx"
+   ],
+   "marca": [
+    "azteca",
+    "bancoazteca"
+   ],
+   "fuente": "https://www.bancoazteca.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "BanCoppel",
+   "sector": "banco",
+   "dominios": [
+    "bancoppel.com"
+   ],
+   "marca": [
+    "bancoppel"
+   ],
+   "fuente": "https://www.bancoppel.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Banregio",
+   "sector": "banco",
+   "dominios": [
+    "banregio.com"
+   ],
+   "marca": [
+    "banregio"
+   ],
+   "fuente": "https://www.banregio.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Afirme",
+   "sector": "banco",
+   "dominios": [
+    "afirme.com",
+    "afirmeseguros.com"
+   ],
+   "marca": [
+    "afirme",
+    "afirmeseguros"
+   ],
+   "fuente": "https://www.afirme.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "BanBajío",
+   "sector": "banco",
+   "dominios": [
+    "bb.com.mx"
+   ],
+   "marca": [],
+   "fuente": "https://www.bb.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Nu México",
+   "sector": "banco",
+   "dominios": [
+    "nu.com.mx",
+    "nubank.com.mx",
+    "blog.nu.com.mx"
+   ],
+   "marca": [
+    "blog",
+    "moradita",
+    "nu",
+    "nubank"
+   ],
+   "fuente": "https://nu.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Mercado Pago",
+   "sector": "banco",
+   "dominios": [
+    "mercadopago.com.mx",
+    "mercadopago.com"
+   ],
+   "marca": [
+    "mercado pago",
+    "mercadopago"
+   ],
+   "fuente": "https://www.mercadopago.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Spin by OXXO",
+   "sector": "banco",
+   "dominios": [
+    "spinbyoxxo.com.mx",
+    "link.spinbyoxxo.com.mx"
+   ],
+   "marca": [
+    "link",
+    "spinbyoxxo"
+   ],
+   "fuente": "https://spinbyoxxo.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Stori",
+   "sector": "banco",
+   "dominios": [
+    "storicard.com"
+   ],
+   "marca": [
+    "storicard"
+   ],
+   "fuente": "https://www.storicard.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Klar",
+   "sector": "banco",
+   "dominios": [
+    "klar.mx"
+   ],
+   "marca": [
+    "klar"
+   ],
+   "fuente": "https://www.klar.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Hey Banco",
+   "sector": "banco",
+   "dominios": [
+    "banco.hey.inc",
+    "hey.inc",
+    "heybanco.com"
+   ],
+   "marca": [
+    "banco",
+    "heybanco"
+   ],
+   "fuente": "https://banco.hey.inc",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Ualá",
+   "sector": "banco",
+   "dominios": [
+    "uala.mx",
+    "ualabis.com.mx"
+   ],
+   "marca": [
+    "uala",
+    "ualabis"
+   ],
+   "fuente": "https://www.uala.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Openbank México",
+   "sector": "banco",
+   "dominios": [
+    "openbank.mx",
+    "atencion.openbank.mx"
+   ],
+   "marca": [
+    "atencion",
+    "openbank"
+   ],
+   "fuente": "https://www.openbank.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "RappiCard",
+   "sector": "banco",
+   "dominios": [
+    "rappicard.mx"
+   ],
+   "marca": [
+    "rappicard"
+   ],
+   "fuente": "https://rappicard.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "DiDi Card",
+   "sector": "banco",
+   "dominios": [
+    "didifinance.com",
+    "web.didiglobal.com"
+   ],
+   "marca": [
+    "didifinance"
+   ],
+   "fuente": "https://didifinance.com",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Banco del Bienestar",
+   "sector": "banco",
+   "dominios": [
+    "gob.mx",
+    "bancodelbienestar.gob.mx"
+   ],
+   "marca": [
+    "bancodelbienestar"
+   ],
+   "fuente": "https://www.gob.mx/bancodelbienestar",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Banco Compartamos",
+   "sector": "banco",
+   "dominios": [
+    "compartamos.com.mx",
+    "compartamosnet.com.mx"
+   ],
+   "marca": [
+    "compartamos",
+    "compartamosnet"
+   ],
+   "fuente": "https://www.compartamos.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "CONDUSEF",
+   "sector": "comercio",
+   "dominios": [
+    "condusef.gob.mx",
+    "gob.mx",
+    "webapps.condusef.gob.mx",
+    "phpapps.condusef.gob.mx"
+   ],
+   "marca": [
+    "condusef",
+    "phpapps",
+    "webapps"
+   ],
+   "fuente": "https://www.condusef.gob.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Banco de México (Banxico): CoDi, DiMo y SPEI",
+   "sector": "comercio",
+   "dominios": [
+    "banxico.org.mx",
+    "codi.org.mx"
+   ],
+   "marca": [
+    "banxico",
+    "codi"
+   ],
+   "fuente": "https://www.banxico.org.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Comisión Nacional Bancaria y de Valores (CNBV)",
+   "sector": "banco",
+   "dominios": [
+    "cnbv.gob.mx",
+    "gob.mx"
+   ],
+   "marca": [
+    "cnbv"
+   ],
+   "fuente": "https://www.gob.mx/cnbv",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Asociación de Bancos de México (ABM)",
+   "sector": "banco",
+   "dominios": [
+    "abm.org.mx"
+   ],
+   "marca": [],
+   "fuente": "https://www.abm.org.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Mercado Libre",
+   "sector": "comercio",
+   "dominios": [
+    "mercadolibre.com.mx",
+    "mercadolibre.com",
+    "vendedores.mercadolibre.com.mx",
+    "mercadopago.com.mx"
+   ],
+   "marca": [
+    "mercado libre",
+    "mercadolibre",
+    "mercadopago",
+    "vendedores"
+   ],
+   "fuente": "https://www.mercadolibre.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Amazon México",
+   "sector": "comercio",
+   "dominios": [
+    "amazon.com.mx",
+    "amazon.com"
+   ],
+   "marca": [
+    "amazon"
+   ],
+   "fuente": "https://www.amazon.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Meta (Facebook, Instagram y WhatsApp)",
+   "sector": "meta",
+   "dominios": [
+    "facebook.com",
+    "fb.com",
+    "facebookmail.com",
+    "support.facebook.com",
+    "instagram.com",
+    "mail.instagram.com",
+    "support.instagram.com",
+    "meta.com",
+    "metamail.com",
+    "global.metamail.com",
+    "whatsapp.com",
+    "faq.whatsapp.com"
+   ],
+   "marca": [
+    "facebook",
+    "facebookmail",
+    "global",
+    "instagram",
+    "mail",
+    "meta",
+    "metamail",
+    "support",
+    "whatsapp"
+   ],
+   "fuente": "https://www.meta.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Google",
+   "sector": "comercio",
+   "dominios": [
+    "google.com",
+    "google.com.mx",
+    "accounts.google.com",
+    "support.google.com"
+   ],
+   "marca": [
+    "accounts",
+    "google",
+    "support"
+   ],
+   "fuente": "https://www.google.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Apple",
+   "sector": "comercio",
+   "dominios": [
+    "apple.com",
+    "support.apple.com",
+    "icloud.com"
+   ],
+   "marca": [
+    "apple",
+    "icloud",
+    "support"
+   ],
+   "fuente": "https://www.apple.com/mx/",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Microsoft",
+   "sector": "comercio",
+   "dominios": [
+    "microsoft.com",
+    "support.microsoft.com"
+   ],
+   "marca": [
+    "microsoft",
+    "support"
+   ],
+   "fuente": "https://www.microsoft.com/es-mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "DHL",
+   "sector": "paqueteria",
+   "dominios": [
+    "dhl.com",
+    "del.dhl.com",
+    "express.dhl.com",
+    "dpdhl.com",
+    "group.dhl.com",
+    "dhl-news.com"
+   ],
+   "marca": [
+    "dhl-news",
+    "dpdhl",
+    "express",
+    "group"
+   ],
+   "fuente": "https://www.dhl.com/mx-es/home.html",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Estafeta",
+   "sector": "paqueteria",
+   "dominios": [
+    "estafeta.com"
+   ],
+   "marca": [
+    "estafeta"
+   ],
+   "fuente": "https://www.estafeta.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "FedEx",
+   "sector": "paqueteria",
+   "dominios": [
+    "fedex.com"
+   ],
+   "marca": [
+    "fedex"
+   ],
+   "fuente": "https://www.fedex.com/es-mx/home.html",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "UPS",
+   "sector": "paqueteria",
+   "dominios": [
+    "ups.com",
+    "ftp2.ups.com"
+   ],
+   "marca": [
+    "ftp2"
+   ],
+   "fuente": "https://www.ups.com/mx/es/Home.page",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Paquetexpress",
+   "sector": "paqueteria",
+   "dominios": [
+    "paquetexpress.com.mx"
+   ],
+   "marca": [
+    "paquetexpress"
+   ],
+   "fuente": "https://www.paquetexpress.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Redpack",
+   "sector": "paqueteria",
+   "dominios": [
+    "redpack.com.mx"
+   ],
+   "marca": [
+    "redpack"
+   ],
+   "fuente": "https://www.redpack.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "99 Minutos",
+   "sector": "paqueteria",
+   "dominios": [
+    "99minutos.com",
+    "tracking.99minutos.com",
+    "99minutos.zohodesk.com"
+   ],
+   "marca": [
+    "99minutos",
+    "tracking"
+   ],
+   "fuente": "https://www.99minutos.com",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "J&T Express",
+   "sector": "paqueteria",
+   "dominios": [
+    "jtexpress.mx"
+   ],
+   "marca": [
+    "jtexpress"
+   ],
+   "fuente": "https://www.jtexpress.mx",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Telcel",
+   "sector": "servicios",
+   "dominios": [
+    "telcel.com",
+    "mitelcel.com"
+   ],
+   "marca": [
+    "mitelcel",
+    "telcel"
+   ],
+   "fuente": "https://www.telcel.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "AT&T México",
+   "sector": "servicios",
+   "dominios": [
+    "att.com.mx"
+   ],
+   "marca": [],
+   "fuente": "https://www.att.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Movistar México",
+   "sector": "servicios",
+   "dominios": [
+    "movistar.com.mx"
+   ],
+   "marca": [
+    "movistar"
+   ],
+   "fuente": "https://www.movistar.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Telmex",
+   "sector": "servicios",
+   "dominios": [
+    "telmex.com"
+   ],
+   "marca": [
+    "telmex"
+   ],
+   "fuente": "https://telmex.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "izzi",
+   "sector": "servicios",
+   "dominios": [
+    "izzi.mx",
+    "ayudaizzi.izzi.mx"
+   ],
+   "marca": [
+    "ayudaizzi",
+    "izzi"
+   ],
+   "fuente": "https://www.izzi.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Totalplay",
+   "sector": "servicios",
+   "dominios": [
+    "totalplay.com.mx",
+    "mitotalplay.com.mx"
+   ],
+   "marca": [
+    "mitotalplay",
+    "totalplay"
+   ],
+   "fuente": "https://www.totalplay.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Bait",
+   "sector": "servicios",
+   "dominios": [
+    "mibait.com"
+   ],
+   "marca": [
+    "mibait"
+   ],
+   "fuente": "https://mibait.com",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Coppel",
+   "sector": "comercio",
+   "dominios": [
+    "coppel.com",
+    "bancoppel.com",
+    "aforecoppel.com"
+   ],
+   "marca": [
+    "aforecoppel",
+    "bancoppel",
+    "coppel"
+   ],
+   "fuente": "https://www.coppel.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Elektra",
+   "sector": "comercio",
+   "dominios": [
+    "elektra.mx"
+   ],
+   "marca": [
+    "elektra"
+   ],
+   "fuente": "https://www.elektra.mx",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Liverpool",
+   "sector": "comercio",
+   "dominios": [
+    "liverpool.com.mx"
+   ],
+   "marca": [
+    "liverpool"
+   ],
+   "fuente": "https://www.liverpool.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Walmart y Bodega Aurrerá",
+   "sector": "comercio",
+   "dominios": [
+    "walmart.com.mx",
+    "bodegaaurrera.com.mx",
+    "walmartmexico.com"
+   ],
+   "marca": [
+    "bodegaaurrera",
+    "walmart",
+    "walmartmexico"
+   ],
+   "fuente": "https://www.walmart.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "OXXO",
+   "sector": "comercio",
+   "dominios": [
+    "oxxo.com"
+   ],
+   "marca": [
+    "oxxo"
+   ],
+   "fuente": "https://www.oxxo.com",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Temu",
+   "sector": "comercio",
+   "dominios": [
+    "temu.com"
+   ],
+   "marca": [
+    "temu"
+   ],
+   "fuente": "https://www.temu.com/mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Shein",
+   "sector": "comercio",
+   "dominios": [
+    "shein.com.mx",
+    "shein.com"
+   ],
+   "marca": [
+    "shein"
+   ],
+   "fuente": "https://www.shein.com.mx",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Netflix",
+   "sector": "comercio",
+   "dominios": [
+    "netflix.com",
+    "help.netflix.com"
+   ],
+   "marca": [
+    "help",
+    "netflix"
+   ],
+   "fuente": "https://www.netflix.com/mx/",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Uber",
+   "sector": "comercio",
+   "dominios": [
+    "uber.com",
+    "help.uber.com"
+   ],
+   "marca": [
+    "help",
+    "uber"
+   ],
+   "fuente": "https://www.uber.com/mx/es/",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "DiDi",
+   "sector": "comercio",
+   "dominios": [
+    "didiglobal.com"
+   ],
+   "marca": [
+    "didiglobal"
+   ],
+   "fuente": "https://web.didiglobal.com/mx/",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Servicio de Administración Tributaria (SAT)",
+   "sector": "gobierno",
+   "dominios": [
+    "sat.gob.mx",
+    "gob.mx"
+   ],
+   "marca": [
+    "sat"
+   ],
+   "fuente": "https://www.sat.gob.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Instituto Mexicano del Seguro Social (IMSS)",
+   "sector": "gobierno",
+   "dominios": [
+    "imss.gob.mx",
+    "gob.mx"
+   ],
+   "marca": [
+    "imss"
+   ],
+   "fuente": "https://www.imss.gob.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (ISSSTE)",
+   "sector": "gobierno",
+   "dominios": [
+    "gob.mx",
+    "issste.gob.mx",
+    "tramitesdig2.issste.gob.mx"
+   ],
+   "marca": [
+    "issste",
+    "tramitesdig2"
+   ],
+   "fuente": "https://www.gob.mx/issste",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Instituto del Fondo Nacional de la Vivienda para los Trabajadores (Infonavit)",
+   "sector": "gobierno",
+   "dominios": [
+    "infonavit.org.mx",
+    "portalmx.infonavit.org.mx"
+   ],
+   "marca": [
+    "infonavit",
+    "portalmx"
+   ],
+   "fuente": "https://www.infonavit.org.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Fondo de la Vivienda del ISSSTE (FOVISSSTE)",
+   "sector": "gobierno",
+   "dominios": [
+    "fovissste.gob.mx",
+    "gob.mx",
+    "inscripcion.fovissste.gob.mx",
+    "sibadac6.fovissste.com.mx"
+   ],
+   "marca": [
+    "fovissste",
+    "inscripcion",
+    "sibadac6"
+   ],
+   "fuente": "https://www.fovissste.gob.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Comisión Federal de Electricidad (CFE)",
+   "sector": "servicios",
+   "dominios": [
+    "cfe.mx",
+    "cfe.gob.mx",
+    "app.cfe.mx",
+    "cfeteit.mx"
+   ],
+   "marca": [
+    "cfe",
+    "cfeteit"
+   ],
+   "fuente": "https://www.cfe.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Correos de México (Servicio Postal Mexicano, SEPOMEX)",
+   "sector": "paqueteria",
+   "dominios": [
+    "gob.mx",
+    "correosdemexico.gob.mx"
+   ],
+   "marca": [
+    "correosdemexico"
+   ],
+   "fuente": "https://www.gob.mx/correosdemexico",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Secretaría de Bienestar (Pensiones y Programas para el Bienestar)",
+   "sector": "gobierno",
+   "dominios": [
+    "gob.mx",
+    "programasparaelbienestar.gob.mx",
+    "bienestar.gob.mx"
+   ],
+   "marca": [
+    "bienestar",
+    "programasparaelbienestar"
+   ],
+   "fuente": "https://www.gob.mx/bienestar",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Coordinación Nacional de Becas para el Bienestar Benito Juárez",
+   "sector": "gobierno",
+   "dominios": [
+    "gob.mx",
+    "programasparaelbienestar.gob.mx"
+   ],
+   "marca": [
+    "programasparaelbienestar"
+   ],
+   "fuente": "https://www.gob.mx/becasbenitojuarez",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Registro Nacional de Población (RENAPO) – CURP",
+   "sector": "gobierno",
+   "dominios": [
+    "gob.mx",
+    "consultas.curp.gob.mx",
+    "citas.renapo.gob.mx"
+   ],
+   "marca": [
+    "citas",
+    "consultas"
+   ],
+   "fuente": "https://www.gob.mx/curp",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Secretaría de Relaciones Exteriores (SRE) – pasaportes y citas",
+   "sector": "gobierno",
+   "dominios": [
+    "gob.mx",
+    "sre.gob.mx",
+    "citas.sre.gob.mx",
+    "consulmex.sre.gob.mx",
+    "embamex.sre.gob.mx"
+   ],
+   "marca": [
+    "citas",
+    "consulmex",
+    "embamex"
+   ],
+   "fuente": "https://www.gob.mx/sre",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Instituto Nacional Electoral (INE)",
+   "sector": "gobierno",
+   "dominios": [
+    "ine.mx",
+    "centralelectoral.ine.mx",
+    "inetel-citas.ine.mx"
+   ],
+   "marca": [
+    "centralelectoral",
+    "inetel-citas"
+   ],
+   "fuente": "https://ine.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Procuraduría Federal del Consumidor (Profeco)",
+   "sector": "gobierno",
+   "dominios": [
+    "gob.mx",
+    "profeco.gob.mx",
+    "repep.profeco.gob.mx"
+   ],
+   "marca": [
+    "profeco",
+    "repep"
+   ],
+   "fuente": "https://www.gob.mx/profeco",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Secretaría de Seguridad y Protección Ciudadana (SSPC) y su Policía Cibernética",
+   "sector": "gobierno",
+   "dominios": [
+    "gob.mx",
+    "sspc.gob.mx",
+    "gabinetedeseguridad.gob.mx"
+   ],
+   "marca": [
+    "gabinetedeseguridad",
+    "sspc"
+   ],
+   "fuente": "https://www.gob.mx/sspc",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Guardia Nacional",
+   "sector": "gobierno",
+   "dominios": [
+    "gob.mx",
+    "sspc.gob.mx"
+   ],
+   "marca": [
+    "sspc"
+   ],
+   "fuente": "https://www.gob.mx/guardianacional",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Financiera para el Bienestar (Finabien, antes Telecomm)",
+   "sector": "gobierno",
+   "dominios": [
+    "finabien.gob.mx",
+    "gob.mx"
+   ],
+   "marca": [
+    "finabien"
+   ],
+   "fuente": "https://www.finabien.gob.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Secretaría de Administración y Finanzas de la Ciudad de México (Tesorería CDMX: tenencia, predial y multas)",
+   "sector": "gobierno",
+   "dominios": [
+    "finanzas.cdmx.gob.mx",
+    "dgtc.finanzas.cdmx.gob.mx",
+    "data.finanzas.cdmx.gob.mx",
+    "ovica.finanzas.cdmx.gob.mx",
+    "descuentopredial.cdmx.gob.mx",
+    "infracciones.cdmx.gob.mx"
+   ],
+   "marca": [
+    "data",
+    "descuentopredial",
+    "dgtc",
+    "finanzas",
+    "infracciones",
+    "ovica"
+   ],
+   "fuente": "https://www.finanzas.cdmx.gob.mx",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  },
+  {
+   "institucion": "Llave CDMX (cuenta única del Gobierno de la CDMX, Agencia Digital de Innovación Pública)",
+   "sector": "gobierno",
+   "dominios": [
+    "llave.cdmx.gob.mx",
+    "adip.cdmx.gob.mx",
+    "cdmx.gob.mx",
+    "311locatel.cdmx.gob.mx"
+   ],
+   "marca": [
+    "311locatel",
+    "adip",
+    "cdmx",
+    "llave"
+   ],
+   "fuente": "https://llave.cdmx.gob.mx",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "demo": false
+  },
+  {
+   "institucion": "Secretaría de Infraestructura, Comunicaciones y Transportes (SICT) – Licencia Federal Digital de Conductor",
+   "sector": "gobierno",
+   "dominios": [
+    "gob.mx",
+    "sict.gob.mx",
+    "sct.gob.mx",
+    "lfd.sct.gob.mx",
+    "micrs.sct.gob.mx"
+   ],
+   "marca": [
+    "micrs",
+    "sict"
+   ],
+   "fuente": "https://www.gob.mx/sct",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "demo": false
+  }
+ ]
+}

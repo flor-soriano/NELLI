@@ -1,0 +1,3 @@
+{"version": "v1", "fecha": "2026-10-26", "nota": "Lista propia de ligas ya reportadas (dominios registrables). Solo entradas con fuente. Vacía al arrancar; la demo usa bancoreal-info.com como ejemplo inventado.", "filas": [
+  {"dominio": "bancoreal-info.com", "fuente": "inventado para la demo", "fecha": "2026-10-26"}
+]}

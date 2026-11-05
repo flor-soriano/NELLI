@@ -1,0 +1,11 @@
+{
+  "duracion_s": 66.65,
+  "voz": "01_VOZ/narracion.wav",
+  "bajo_voz": {"activo": true, "db": 13, "minimo_db": 6, "antes_ms": 250, "regreso_ms": 650},
+  "impacto_s": 12.24,
+  "bloques": [
+    {"nombre": "tension inicial", "pista": "misterio-01.mp3", "desde": 0, "hasta": 12.24, "lufs": -21, "fundido_in": 0.5, "fundido_out": 1.0},
+    {"nombre": "explicacion", "pista": "curiosa-01.mp3", "desde": 11.8, "hasta": 43.68, "lufs": -22, "fundido_in": 1.0, "fundido_out": 1.0},
+    {"nombre": "cierre calido", "pista": "calida-01.mp3", "desde": 43.2, "hasta": "fin", "inicio_pista": "fin", "lufs": -21, "fundido_in": 1.0, "fundido_out": 1.5}
+  ]
+}

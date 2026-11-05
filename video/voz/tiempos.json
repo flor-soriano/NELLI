@@ -1,0 +1,61 @@
+{
+ "sr": 24000,
+ "lineas": [
+  {
+   "id": "L01",
+   "segundos": 6.26,
+   "texto": "Te llega un mensaje: tu cuenta será bloqueada hoy. Entra aquí y valida tus datos."
+  },
+  {
+   "id": "L02",
+   "segundos": 4.927,
+   "texto": "Suena urgente. Suena real. Y está hecho para que no pienses."
+  },
+  {
+   "id": "L03",
+   "segundos": 4.786,
+   "texto": "Antes de creer, comprar o contestar, verifícalo. Eso hace Nelli."
+  },
+  {
+   "id": "L04",
+   "segundos": 6.378,
+   "texto": "Pegas el mensaje, subes la captura o mandas la nota de voz. Nelli nunca abre la liga."
+  },
+  {
+   "id": "L05",
+   "segundos": 6.066,
+   "texto": "En segundos tienes una tarjeta clara: qué nivel de riesgo es, y la evidencia en cinco puntos."
+  },
+  {
+   "id": "L06",
+   "segundos": 6.063,
+   "texto": "Quién está detrás, qué te pide, si se sostiene, a dónde lleva la liga y qué dicen los demás."
+  },
+  {
+   "id": "L07",
+   "segundos": 6.399,
+   "texto": "Un solo paso a seguir. La fuente oficial verificada. Y los botones para reportar y bloquear."
+  },
+  {
+   "id": "L08",
+   "segundos": 6.238,
+   "texto": "Las reglas deciden. La inteligencia artificial solo explica, y nunca puede bajar una alerta."
+  },
+  {
+   "id": "L09",
+   "segundos": 5.11,
+   "texto": "Nelli nunca dice que algo es seguro. Si no puede revisarlo, también te lo dice."
+  },
+  {
+   "id": "L10",
+   "segundos": 5.206,
+   "texto": "Y si quieres, te ayuda a blindar tu cuenta en siete minutos, paso a paso."
+  },
+  {
+   "id": "L11",
+   "segundos": 3.93,
+   "texto": "Nelli. Verifica antes de creer, comprar o contestar."
+  }
+ ],
+ "total": 61.36
+}

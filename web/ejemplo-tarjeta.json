@@ -1,0 +1,81 @@
+{
+  "version": "0.1.0-dia1",
+  "nivel": "fraude_confirmado",
+  "etiqueta": "Fraude confirmado",
+  "tipo": "banco_phishing",
+  "tipo_nombre": "Aviso falso de banco",
+  "puntos": [
+    {
+      "n": 1,
+      "titulo": "¿Quién está detrás?",
+      "texto": "Dice ser un banco, pero la liga no es de Banco Real (inventado para la demo).",
+      "estado": "alerta"
+    },
+    {
+      "n": 2,
+      "titulo": "¿Qué te pide hacer?",
+      "texto": "Te pide: datos sensibles (NIP, código, tarjeta o validar datos). Con prisa.",
+      "estado": "alerta"
+    },
+    {
+      "n": 3,
+      "titulo": "¿Se sostiene lo que dice?",
+      "texto": "Ningún banco pide NIP, contraseña, CVV ni código por mensaje, liga o llamada (fuente oficial pendiente de anotar).",
+      "estado": "alerta"
+    },
+    {
+      "n": 4,
+      "titulo": "¿A dónde te lleva la liga?",
+      "texto": "hxxp://bancoreal-info[.]com/validar. bancoreal-info.com usa la marca «bancoreal» pero no es bancoreal.com",
+      "estado": "alerta"
+    },
+    {
+      "n": 5,
+      "titulo": "¿Qué dicen los demás?",
+      "texto": "La liga bancoreal-info[.]com ya está reportada.",
+      "estado": "alerta"
+    }
+  ],
+  "paso": "No abras la liga. Llama al número de atrás de tu tarjeta y pregunta.",
+  "botones": [
+    "Reportar",
+    "Bloquear",
+    "Pregúntale a alguien de confianza",
+    "Ya caí, ¿qué hago?",
+    "Blindar mi cuenta en 7 minutos"
+  ],
+  "mensaje_confianza": "Oye, me llegó este mensaje y Nelli lo marcó como «Fraude confirmado». ¿Tú qué opinas? No abras la liga.",
+  "ya_cai": "Llama ya al banco (número de atrás de la tarjeta) y pide bloquear tarjeta y cambiar claves. Después levanta la queja en CONDUSEF. No es tu culpa: estos mensajes están hechos para engañar.",
+  "fuente_verificada": {
+    "institucion": "Banco Real (inventado para la demo)",
+    "dominio_oficial": "bancoreal.com"
+  },
+  "ligas_desactivadas": [
+    "bancoreal-info[.]com/validar"
+  ],
+  "decidio": "reglas",
+  "razones": [
+    "La liga bancoreal-info.com imita a Banco Real (inventado para la demo) y no es su dominio oficial (bancoreal.com)",
+    "La liga bancoreal-info.com ya está reportada (inventado para la demo)",
+    "Bancos (todos): Ningún banco pide NIP, contraseña, CVV ni código por mensaje, liga o llamada (fuente pendiente de verificar: no se confirma)",
+    "señal fuerte · pide_datos_sensibles: «valida tus datos»",
+    "señal fuerte · dominio_imita: «bancoreal-info.com usa la marca «bancoreal» pero no es bancoreal.com»",
+    "señal fuerte · liga_reportada: «bancoreal-info.com»",
+    "señal · presion: «sera bloqueada»",
+    "señal · banco: «banco»"
+  ],
+  "licencia": {
+    "revisado_contra": [
+      "lista oficial v1 (2026-10-26)",
+      "reglas v1 (2026-10-26) · nunca v1 (2026-10-26)",
+      "plantillas v1 (2026-10-26)"
+    ],
+    "ia": "sin IA: reglas solas",
+    "no_pude_ver": [
+      "Prompt Guard 2 (no instalado aún)",
+      "la red estaba apagada: no seguí redirecciones ni consulté RDAP/URLhaus"
+    ],
+    "canal": "sms",
+    "como_repetirlo": "nelli verificar --canal sms --sin-ia \"<el mismo texto>\""
+  }
+}

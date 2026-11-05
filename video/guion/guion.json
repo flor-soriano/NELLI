@@ -1,0 +1,13 @@
+[
+ {"id":"L01","texto":"Te llega un mensaje: tu cuenta será bloqueada hoy. Entra aquí y valida tus datos.","enfasis":["cuenta será bloqueada"]},
+ {"id":"L02","texto":"Suena urgente. Suena real. Y está hecho para que no pienses.","enfasis":["para que no pienses"]},
+ {"id":"L03","texto":"Antes de creer, comprar o contestar, verifícalo. Eso hace Nelli.","enfasis":["Nelli"]},
+ {"id":"L04","texto":"Pegas el mensaje, subes la captura o mandas la nota de voz. Nelli nunca abre la liga.","enfasis":["nunca abre la liga"]},
+ {"id":"L05","texto":"En segundos tienes una tarjeta clara: qué nivel de riesgo es, y la evidencia en cinco puntos.","enfasis":["cinco puntos"]},
+ {"id":"L06","texto":"Quién está detrás, qué te pide, si se sostiene, a dónde lleva la liga y qué dicen los demás.","enfasis":["qué dicen los demás"]},
+ {"id":"L07","texto":"Un solo paso a seguir. La fuente oficial verificada. Y los botones para reportar y bloquear.","enfasis":["reportar y bloquear"]},
+ {"id":"L08","texto":"Las reglas deciden. La inteligencia artificial solo explica, y nunca puede bajar una alerta.","enfasis":["Las reglas deciden"]},
+ {"id":"L09","texto":"Nelli nunca dice que algo es seguro. Si no puede revisarlo, también te lo dice.","enfasis":["nunca dice que algo es seguro"]},
+ {"id":"L10","texto":"Y si quieres, te ayuda a blindar tu cuenta en siete minutos, paso a paso.","enfasis":["siete minutos"]},
+ {"id":"L11","texto":"Nelli. Verifica antes de creer, comprar o contestar.","enfasis":["Nelli"]}
+]

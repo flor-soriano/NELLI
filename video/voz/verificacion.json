@@ -1,0 +1,94 @@
+{
+ "motor": "faster-whisper large-v3-turbo",
+ "lineas": [
+  {
+   "id": "L01",
+   "parecido": 1.0,
+   "guion": "Te llega un mensaje: tu cuenta será bloqueada hoy. Entra aquí y valida tus datos.",
+   "oido": "Te llega un mensaje. Tu cuenta será bloqueada hoy. Entra aquí y válida tus datos.",
+   "ok": true,
+   "toma": "L01__s2.wav"
+  },
+  {
+   "id": "L02",
+   "parecido": 1.0,
+   "guion": "Suena urgente. Suena real. Y está hecho para que no pienses.",
+   "oido": "Suena urgente, suena real, y está hecho para que no pienses.",
+   "ok": true,
+   "toma": "L02__s1.wav"
+  },
+  {
+   "id": "L03",
+   "parecido": 0.9,
+   "guion": "Antes de creer, comprar o contestar, verifícalo. Eso hace Nelli.",
+   "oido": "Antes de creer, comprar o contestar, verifícalo. Eso hace Nelly.",
+   "ok": true,
+   "toma": "L03__s2.wav"
+  },
+  {
+   "id": "L04",
+   "parecido": 0.941,
+   "guion": "Pegas el mensaje, subes la captura o mandas la nota de voz. Nelli nunca abre la liga.",
+   "oido": "Pegas el mensaje, subes la captura o mandas la nota de voz. Nelly nunca abre la liga.",
+   "ok": true,
+   "toma": "L04__s1.wav"
+  },
+  {
+   "id": "L05",
+   "parecido": 1.0,
+   "guion": "En segundos tienes una tarjeta clara: qué nivel de riesgo es, y la evidencia en cinco puntos.",
+   "oido": "En segundos tienes una tarjeta clara, qué nivel de riesgo es, y la evidencia en cinco puntos.",
+   "ok": true,
+   "toma": "L05__s2.wav"
+  },
+  {
+   "id": "L06",
+   "parecido": 1.0,
+   "guion": "Quién está detrás, qué te pide, si se sostiene, a dónde lleva la liga y qué dicen los demás.",
+   "oido": "¿Quién está detrás? ¿Qué te pide si se sostiene? ¿A dónde lleva la liga y qué dicen los demás?",
+   "ok": true,
+   "toma": "L06__s2.wav"
+  },
+  {
+   "id": "L07",
+   "parecido": 1.0,
+   "guion": "Un solo paso a seguir. La fuente oficial verificada. Y los botones para reportar y bloquear.",
+   "oido": "Un solo paso a seguir, la fuente oficial verificada y los botones para reportar y bloquear.",
+   "ok": true,
+   "toma": "L07__s1.wav"
+  },
+  {
+   "id": "L08",
+   "parecido": 1.0,
+   "guion": "Las reglas deciden. La inteligencia artificial solo explica, y nunca puede bajar una alerta.",
+   "oido": "Las reglas deciden. La inteligencia artificial solo explica y nunca puede bajar una alerta.",
+   "ok": true,
+   "toma": "L08__s1.wav"
+  },
+  {
+   "id": "L09",
+   "parecido": 0.933,
+   "guion": "Nelli nunca dice que algo es seguro. Si no puede revisarlo, también te lo dice.",
+   "oido": "Nelly nunca dice que algo es seguro. Si no puede revisarlo, también te lo dice.",
+   "ok": true,
+   "toma": "L09__s3.wav"
+  },
+  {
+   "id": "L10",
+   "parecido": 1.0,
+   "guion": "Y si quieres, te ayuda a blindar tu cuenta en siete minutos, paso a paso.",
+   "oido": "Y si quieres, te ayuda a blindar tu cuenta en 7 minutos, paso a paso.",
+   "ok": true,
+   "toma": "L10__s3.wav"
+  },
+  {
+   "id": "L11",
+   "parecido": 0.875,
+   "guion": "Nelli. Verifica antes de creer, comprar o contestar.",
+   "oido": "Nelly. Verifica antes de creer, comprar o contestar.",
+   "ok": true,
+   "toma": "L11__s1.wav"
+  }
+ ],
+ "minimo": 0.875
+}

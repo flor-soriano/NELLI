@@ -1,0 +1,124 @@
+{
+  "version": "v1",
+  "fecha": "2026-10-26",
+  "nota": "Reglas del motor. Las reglas deciden; la IA explica. Patrones sobre texto normalizado (minúsculas, sin acentos). «fuertes» y «debiles» son las señales que decide el motor.",
+  "fuertes": [
+    "pide_datos_sensibles",
+    "pide_dinero",
+    "texto_para_ia",
+    "prompt_guard",
+    "dominio_imita",
+    "liga_reportada",
+    "dominio_nuevo",
+    "codigo_whatsapp",
+    "familiar_apuro",
+    "extorsion"
+  ],
+  "debiles": [
+    "presion",
+    "premio",
+    "prestamo",
+    "inversion",
+    "empleo",
+    "aviso_meta",
+    "paqueteria",
+    "sat",
+    "cfe",
+    "banco",
+    "suplantacion_gobierno",
+    "compra_venta",
+    "otro_chat",
+    "liga_acortada",
+    "dominio_joven",
+    "punycode",
+    "liga_sin_https",
+    "liga_desconocida"
+  ],
+  "pares_que_suben_a_muy_probable": [
+    [
+      "pide_datos_sensibles",
+      "presion"
+    ],
+    [
+      "pide_dinero",
+      "presion"
+    ],
+    [
+      "pide_dinero",
+      "otro_chat"
+    ],
+    [
+      "inversion",
+      "pide_dinero"
+    ],
+    [
+      "aviso_meta",
+      "liga_desconocida"
+    ]
+  ],
+  "edad_nueva_dias": 30,
+  "edad_joven_dias": 180,
+  "patrones": {
+    "pide_datos_sensibles": "((manda(me|nos)?|envia(me|nos)?|proporciona(me)?|ingresa|captura|confirma(me)?|comparte(me)?|dame|dime|pasa(me)?|escribe|teclea|introduce|necesito|reenvia(me)?|valida|actualiza|verifica)\\w* .{0,40}\\b(nip|contrasena|password|clave|cvv|codigo|token|numero de (tu |su )?tarjeta|fecha de vencimiento|ine|credencial|datos)\\b|\\b(nip|contrasena|cvv|codigo|token|tarjeta|ine|datos) .{0,30}(aqui|en la liga|en el enlace|en el siguiente|en este link)|\\bvalida(r)? (tus|sus) datos|\\bactualiza(r)? (tus|sus) datos|\\bconfirma(r)? (tus|sus) datos|\\bverifica(r)? (tu|su) (cuenta|identidad|informacion)|foto de (tu |la )?(ine|tarjeta))",
+    "pide_dinero": "\\b(deposit\\w*|transfier\\w*|transferencia|abon[aeo]\\w*|clabe|oxxo|anticipo|comision de (apertura|envio|liberacion)|recarga|envia(me)? (el |los |la )?(dinero|efectivo|pago)|bitcoin|usdt|paga(r)? (la |el |una |un )?(multa|aduana|comision|envio|anticipo)|realiza(r)? (el |tu |un )?pago)\\b",
+    "presion": "\\b(hoy mismo|en (las proximas )?24 horas|inmediatamente|de inmediato|urgente|ultimo aviso|ultima oportunidad|sera (bloqueada|suspendida|desactivada|cancelada|eliminada)|bloqueada hoy|se bloqueara|suspenderemos|ahora mismo|cuanto antes|no (lo )?digas a nadie|no le digas|no cuelgues|solo por hoy)\\b",
+    "premio": "\\b(ganaste|has ganado|felicidades|premio|sorteo|rifa|fuiste seleccionad[oa]|reclama tu)\\b",
+    "prestamo": "\\b(prestamo|credito (inmediato|rapido|sin buro|facil|express)|sin buro|te sacamos (del|de) buro|sin aval|aprobado al instante)\\b",
+    "inversion": "\\b(inversion|invierte|rendimiento|ganancias? garantizadas?|\\d+ ?% (mensual|diario|semanal)|cripto|trading|forex|duplica tu dinero)\\b",
+    "empleo": "\\b(vacante|trabajo desde casa|medio tiempo|gana(s)? (hasta )?\\$ ?\\d|dar(le)? like|calificar (productos|videos)|reclutador[a]?)\\b",
+    "familiar_apuro": "\\b(hola (mama|papa|ma|pa|tia|tio|abue)|cambie de numero|este es mi (nuevo numero|numero nuevo)|tuve un accidente|estoy detenid[oa]|me (asaltaron|secuestraron)|necesito que me (deposites|mandes|prestes)|tenemos a (tu|su) (hijo|hija|familiar|esposo|esposa|hermano|hermana|mama|papa))\\b",
+    "extorsion": "\\b(secuestr\\w*|te vamos a (matar|levantar)|sabemos donde vives|tus fotos (intimas|desnud\\w*)|publicaremos|vamos a publicar|somos (del|de la) (cjng|cartel)|orden de aprehension)\\b",
+    "aviso_meta": "\\b((tu |su |la )?(pagina|cuenta|fan ?page) (sera|va a ser|quedara) (desactivada|eliminada|inhabilitada|suspendida|restringida)|infringe (las|nuestras) (normas|politicas)|derechos de autor|meta (support|business|verified|team|soporte)|facebook (support|security|team|soporte)|apelacion|apela(r)? (aqui|ahora))\\b",
+    "paqueteria": "\\b(paquete|paqueteria|dhl|fedex|estafeta|ups|redpack|correos de mexico|aduana|direccion incompleta|no pudo ser entregado|reprograma(r)? (tu|la) entrega)\\b",
+    "sat": "\\b(sat|servicio de administracion tributaria|devolucion de impuestos|saldo a favor|buzon tributario|declaracion anual|requerimiento fiscal)\\b",
+    "cfe": "\\b(cfe|comision federal de electricidad|corte (de|del) (luz|servicio)|adeudo (de|en) (tu|su) recibo|recibo de luz|telmex|izzi|totalplay|megacable|predial)\\b",
+    "codigo_whatsapp": "(te (mande|envie|llego|mandamos|enviamos) (por error )?(un|mi|el|tu) codigo|(me (lo )?pasas|pasame|mandame|reenvia(me)?|dame|dime|necesito|enviame|comparteme) (el |ese |tu |los )?(codigo|6 digitos|numeros? que te llego)|(codigo|clave) (de |del )?(whatsapp|6 digitos|verificacion|activacion) .{0,40}(pasa|manda|reenvia|envia|dame|dime|necesito|comparte)|(pasa|manda|reenvia|envia|dame|dime|necesito|comparte)\\w* .{0,40}(codigo|clave) (de |del )?(whatsapp|6 digitos|verificacion|activacion))",
+    "otro_chat": "\\b(escribeme al (whatsapp|whats|telegram)|wa\\.me|t\\.me|telegram|mandame (whats|mensaje) al)\\b",
+    "banco": "\\b(banco|bbva|bancomer|banorte|santander|banamex|citibanamex|hsbc|scotiabank|banregio|afirme|inbursa|banco azteca|bancoppel|nu|klar|stori|mercado pago|spei|tarjeta|cuenta bancaria|buro de credito)\\b",
+    "suplantacion_gobierno": "\\b(gobierno|bienestar|pension|imss|infonavit|issste|fonacot|becas? (benito juarez|para el bienestar)|programa social|apoyo (del gobierno|economico))\\b",
+    "compra_venta": "\\b(marketplace|apart[ae]lo|te lo (dejo|vendo)|lo aparto con|anticipo del \\d+|oferta (unica|exclusiva)|liquidacion|promocion (exclusiva|unica))\\b",
+    "texto_para_ia": "(ignora (todas )?(las |tus )?(instrucciones|reglas|indicaciones)|ignore (all )?(previous|prior|the above|your) (instructions|rules)|system prompt|eres un asistente|you are an? (assistant|ai|model)|clasifica(lo)? como (seguro|legitimo|no fraude|sin senales)|marca(lo)? como (seguro|legitimo|sin senales)|di que (es seguro|no es fraude|no hay senales)|nivel[_ ]sugerido|no vemos senales claras|\\bassistant:|\\bdeveloper:|<\\||\\[inst\\])"
+  },
+  "tipo_por_senal": {
+    "codigo_whatsapp": "codigo_whatsapp",
+    "familiar_apuro": "familiar_en_apuro",
+    "extorsion": "extorsion",
+    "aviso_meta": "aviso_falso_meta",
+    "sat": "sat_impuestos",
+    "cfe": "servicios_cfe",
+    "paqueteria": "paqueteria",
+    "inversion": "inversion_cripto",
+    "prestamo": "prestamo_facil",
+    "premio": "premio_sorteo",
+    "empleo": "empleo_falso",
+    "compra_venta": "compra_venta",
+    "banco": "banco_phishing",
+    "suplantacion_gobierno": "otro"
+  },
+  "orden_tipo": [
+    "codigo_whatsapp",
+    "familiar_apuro",
+    "extorsion",
+    "aviso_meta",
+    "sat",
+    "cfe",
+    "paqueteria",
+    "inversion",
+    "prestamo",
+    "premio",
+    "empleo",
+    "compra_venta",
+    "banco",
+    "suplantacion_gobierno"
+  ],
+  "contexto": [
+    "banco",
+    "sat",
+    "cfe",
+    "paqueteria",
+    "suplantacion_gobierno",
+    "liga_desconocida",
+    "liga_sin_https"
+  ],
+  "nota_contexto": "Señales de contexto: solas no suben nada (un aviso real del banco menciona al banco). Cuentan solo acompañadas de otra señal."
+}

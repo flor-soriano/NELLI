@@ -1,0 +1,34 @@
+# Unidad para un servidor Linux con systemd. Nelli escucha solo
+# dentro del propio servidor (el valor por defecto de nelli.servidor) y lo
+# expone un proxy inverso con TLS. No pongas aquí direcciones ni nombres de
+# equipos: van en la configuración del proxy, fuera del repositorio.
+[Unit]
+Description=Nelli · verificador
+After=network-online.target
+
+[Service]
+User=nelli
+WorkingDirectory=/opt/nelli
+EnvironmentFile=/etc/nelli/nelli.env
+Environment=NELLI_COSTOS=/var/lib/nelli/costos.jsonl
+StateDirectory=nelli
+ExecStart=/opt/nelli/.venv/bin/python -m nelli.servidor --puerto 8000
+Restart=on-failure
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+IPAddressDeny=link-local multicast 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16 100.64.0.0/10 fc00::/7
+MemoryMax=2G
+TasksMax=64
+
+[Install]
+WantedBy=multi-user.target

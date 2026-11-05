@@ -1,0 +1,20 @@
+{
+  "fps": 60,
+  "ancho": 1080,
+  "alto": 1920,
+  "escenas": [
+    {"archivo": "04_ESCENAS/E01_60.mp4", "dur": 5.02},
+    {"archivo": "01_VOZ/grabacion/pantalla.mp4", "in": 5.02, "dur": 1.59},
+    {"archivo": "04_ESCENAS/E02_60.mp4", "dur": 3.5},
+    {"archivo": "01_VOZ/grabacion/pantalla.mp4", "in": 10.11, "dur": 51.52},
+    {"archivo": "04_ESCENAS/E03_60.mp4", "dur": 5.02}
+  ],
+  "titulo": {"texto": "NELLI|Verify before you|*believe, buy or reply*", "dur": 5.5, "tam": 56},
+  "rotulos": [],
+  "subtitulos": null,
+  "voz": "01_VOZ/narracion.wav",
+  "musica": "06_ARMADO/musica_bajo_voz.wav",
+  "efectos_visuales": {"color": true, "vineta": 0.97, "grano": 0.12},
+  "salida": "06_ARMADO/Nelli_IGTV.mp4",
+  "intermedio": "h264"
+}

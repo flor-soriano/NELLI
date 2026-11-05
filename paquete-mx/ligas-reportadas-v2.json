@@ -1,0 +1,127 @@
+{
+ "version": "v2",
+ "fecha": "2026-10-28",
+ "nota": "Dominios registrables extraídos de las ligas de los 123 casos reales (entrega 27-oct). Solo prueba interna hasta doble etiquetado. Fila ydid.ivta5hw retirada el 3-nov-2026: no es un dominio válido (sin TLD real) y su fuente no lo sostiene.",
+ "filas": [
+  {
+   "dominio": "abre.ai",
+   "fuente": "caso NEL-F-105 · SpaPhish (Mendeley Data, Universidad Iberoamericana)",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "afsvkrz.shop",
+   "fuente": "caso NEL-F-045 · SAT (@SATMX) en X",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "appcfe.com",
+   "fuente": "caso NEL-F-020 · InfodemiaMx en X, que reproduce el post de @CFEmx del 1-jul-2026",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "banorte.top",
+   "fuente": "caso NEL-F-107 · Publimetro México (reportes de usuarios; red de 371 sitios que suplantan bancos)",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "bonomujerdb.com",
+   "fuente": "caso NEL-F-062 · TMN en X (captura del WhatsApp)",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "cdmxsk.shop",
+   "fuente": "caso NEL-F-038 · N+ Puebla",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "cfe.com",
+   "fuente": "caso NEL-F-100 · X: especialista en ciberseguridad que publicó la captura del correo",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "estafetap.com",
+   "fuente": "caso NEL-F-030 · Reddit r/mexico",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "finanzas-cdmx.cfd",
+   "fuente": "caso NEL-F-052 · InfodemiaMx (Gobierno de México) en X",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "finanzas-codm.sbs",
+   "fuente": "caso NEL-F-053 · InfodemiaMx (Gobierno de México) en X",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "finanzas-edg.top",
+   "fuente": "caso NEL-F-054 · InfodemiaMx (Gobierno de México) en X",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "fjalisco.lol",
+   "fuente": "caso NEL-F-043 · Gobierno de Jalisco en X",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "it.com",
+   "fuente": "caso NEL-F-046 · Reddit r/mexicocity",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "memorysoftonline.net",
+   "fuente": "caso NEL-F-118 · SpaPhish (Mendeley Data, Universidad Iberoamericana)",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "monterreygob3.one",
+   "fuente": "caso NEL-F-031 · Reddit r/Monterrey",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "multassr.cc",
+   "fuente": "caso NEL-F-050 · Semovi CDMX (@LaSEMOVI) en X",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "multassz.cc",
+   "fuente": "caso NEL-F-049 · Semovi CDMX (@LaSEMOVI) en X",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "pago-seguro.net",
+   "fuente": "caso NEL-F-095 · SpaPhish (Mendeley Data, Universidad Iberoamericana)",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "paypal-online.com",
+   "fuente": "caso NEL-F-120 · SpaPhish (Mendeley Data, Universidad Iberoamericana)",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "slugo.cc",
+   "fuente": "caso NEL-F-063 · Reddit r/MexicoFinanciero",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "telccel.vip",
+   "fuente": "caso NEL-F-016 · Maldita.es, Buloteca (caso abierto, sin verificar por Maldita)",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "verification-ws.cc",
+   "fuente": "caso NEL-F-094 · Publimetro México, que cita a un especialista en ciberseguridad",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "webcindario.com",
+   "fuente": "caso NEL-F-121 · SpaPhish (Mendeley Data, Universidad Iberoamericana)",
+   "fecha": "2026-10-27"
+  },
+  {
+   "dominio": "whatsapp-ws.net",
+   "fuente": "caso NEL-F-013 · TV Azteca Morelos (la nota dice que el mensaje «dirá lo siguiente o al menos será similar»)",
+   "fecha": "2026-10-27"
+  }
+ ]
+}

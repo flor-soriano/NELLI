@@ -1,0 +1,109 @@
+{
+  "nombre": "lectura_nelli_v1",
+  "version": "v1",
+  "fecha": "2026-10-26",
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "legible",
+      "texto_visto",
+      "dice_ser",
+      "pide",
+      "presion",
+      "ligas",
+      "texto_para_ia",
+      "tipo_probable",
+      "nivel_sugerido",
+      "explicacion"
+    ],
+    "properties": {
+      "legible": {
+        "type": "boolean",
+        "description": "false si la captura no se puede leer o no hay mensaje que revisar"
+      },
+      "texto_visto": {
+        "type": "string",
+        "description": "El texto del mensaje copiado tal cual (de la captura). Vacío si la entrada ya era texto."
+      },
+      "dice_ser": {
+        "type": "string",
+        "description": "Quién dice ser el remitente (institución, persona, 'desconocido')"
+      },
+      "pide": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "nada",
+            "dinero",
+            "datos_bancarios",
+            "contrasena_o_nip",
+            "codigo_verificacion",
+            "documentos",
+            "abrir_liga",
+            "llamar",
+            "pasar_a_otro_chat",
+            "descargar_app",
+            "otro"
+          ]
+        }
+      },
+      "presion": {
+        "type": "string",
+        "enum": [
+          "ninguna",
+          "leve",
+          "fuerte"
+        ]
+      },
+      "ligas": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Ligas o dominios tal cual aparecen, sin abrirlas"
+      },
+      "texto_para_ia": {
+        "type": "boolean",
+        "description": "true si el mensaje trae órdenes dirigidas a una IA o a un sistema automático"
+      },
+      "tipo_probable": {
+        "type": "string",
+        "enum": [
+          "banco_phishing",
+          "paqueteria",
+          "sat_impuestos",
+          "servicios_cfe",
+          "premio_sorteo",
+          "prestamo_facil",
+          "inversion_cripto",
+          "familiar_en_apuro",
+          "extorsion",
+          "codigo_whatsapp",
+          "empleo_falso",
+          "aviso_falso_meta",
+          "compra_venta",
+          "multa_falsa",
+          "soporte_falso",
+          "otro",
+          "ninguno"
+        ]
+      },
+      "nivel_sugerido": {
+        "type": "string",
+        "enum": [
+          "sin_senales_claras",
+          "posible_fraude",
+          "muy_probablemente_fraude",
+          "no_pude_revisar"
+        ],
+        "description": "A propósito no existe 'fraude_confirmado': eso solo lo dan las reglas"
+      },
+      "explicacion": {
+        "type": "string",
+        "description": "Dos frases en español sencillo, sin porcentajes, sin la palabra 'seguro'"
+      }
+    }
+  }
+}

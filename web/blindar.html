@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" data-t-content="comun.descripcion" content="Nelli revisa mensajes, fotos y notas de voz sospechosas y te dice en palabras claras si parece fraude. Sin abrir ligas.">
+<title data-t="bl.titulo">Nelli · Blindar mi cuenta en 7 minutos</title>
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="../web/icono-grafito.png">
+<script src="../web/tema.js"></script>
+<script src="../web/idioma.js"></script>
+<link rel="stylesheet" href="../web/nelli.css">
+<style>
+  .pagina { max-width: 560px; margin: 0 auto; padding: 16px 16px 48px; }
+  h1 { font-size: 32px; margin-bottom: 8px; }
+  .intro { margin: 0 0 16px; color: var(--texto-suave); }
+  .conteo { position: sticky; top: 0; z-index: 2; margin: 0 -16px 8px; padding: 10px 16px; background: var(--fondo); font-family: var(--letra-titulo); font-size: 22px; font-weight: 700; }
+  .barra-avance { display: block; height: 10px; border-radius: 999px; background: var(--borde); overflow: hidden; margin-top: 6px; }
+  .barra-avance span { display: block; height: 100%; width: 0; background: var(--accion); transition: width .2s ease; }
+  .pasos { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .paso-item { background: var(--superficie); border: 2px solid var(--borde); border-radius: 16px; }
+  .paso-item:has(input:checked) { border-color: var(--accion); background: var(--ambar-fondo); }
+  .paso-item label { display: flex; gap: 14px; align-items: flex-start; padding: 18px; cursor: pointer; min-height: 72px; font-size: 21px; }
+  .paso-item input { flex: none; width: 38px; height: 38px; margin: 2px 0 0; accent-color: var(--accion); }
+  .paso-item b { display: block; font-size: 21px; line-height: 1.3; }
+  .paso-item span { display: block; margin-top: 6px; color: var(--texto); }
+  .insignia { display: flex; gap: 16px; align-items: center; margin-top: 22px; padding: 20px; border-radius: 16px; background: var(--grafito); color: #ffffff; border-top: 8px solid var(--ambar); }
+  .insignia[hidden] { display: none; }
+  .insignia .icono { width: 56px; height: 56px; }
+  .insignia strong { display: block; font-family: var(--letra-titulo); font-size: 26px; }
+  .nota { margin-top: 18px; font-size: 17px; color: var(--texto-suave); }
+</style>
+</head>
+<body>
+<main class="pagina pagina-blindar">
+  <nav class="menu" data-t-aria="menu.aria" aria-label="Pantallas del prototipo">
+    <a href="../web/index.html" data-t="menu.revisar">Revisar</a>
+    <a href="../feed/index.html" data-t="menu.feed">El feed</a>
+    <a href="../web/blindar.html" aria-current="page" data-t="menu.blindar">Blindar mi cuenta</a>
+    <a href="../web/manual.html" data-t="menu.manual">Manual</a>
+    <span class="ajustes">
+      <button type="button" class="boton-tema" data-tema-boton>Modo oscuro</button>
+      <button type="button" class="boton-idioma" data-idioma-boton lang="en">English</button>
+    </span>
+  </nav>
+  <header class="cabecera-nelli">
+    <img class="logotipo logo-claro" src="../web/logotipo-grafito.png" alt="Nelli" width="720" height="251">
+    <img class="logotipo logo-oscuro" src="../web/logotipo-blanco.png" alt="Nelli" width="720" height="251">
+    <span class="lema" data-t="comun.lema">Verifica antes de creer, comprar o contestar</span>
+    <span class="sello-prototipo"><span data-t="comun.sello">Prototipo no afiliado</span><br>Not a Meta product</span>
+  </header>
+  <p class="potencia-muse"><b data-t="comun.muse">POTENCIADA POR MUSE</b><span data-t="comun.muse.sub">Hecha con la Meta Model API · Muse Spark lee, Muse Voice escucha, Muse Image ilustra</span></p>
+  <div class="revision-hero">
+    <img src="../web/sello-3d.png" data-t-alt="bl.hero.alt" alt="Sello de Nelli en 3D" width="92" height="92">
+    <div><strong data-t="bl.hero.t">Revisión de seguridad</strong><span data-t="bl.hero.p">Esto es Blindar mi cuenta: siete pasos cortos para que nadie entre a tus cuentas. Uno por uno, sin prisa.</span></div>
+  </div>
+  <h1 data-t="bl.h1">Blindar mi cuenta en 7 minutos</h1>
+  <p class="intro" data-t="bl.intro">Marca cada paso cuando lo termines en tu teléfono. Tu avance se guarda solo en este aparato, nadie más lo ve.</p>
+
+  <p class="conteo" aria-live="polite"><span data-t="bl.llevas">Llevas </span><span id="n">0</span><span data-t="bl.de7"> de 7</span><span class="barra-avance" aria-hidden="true"><span id="barra"></span></span></p>
+
+  <ol class="pasos">
+    <li class="paso-item"><label><input type="checkbox" data-paso><span><b data-t="bl.1.t">1. Bloqueo de pantalla con PIN o huella</b>
+      <span class="por-que" data-t="bl.1.p">Por qué te cuida: Así nadie abre tu teléfono aunque lo pierda o se lo roben.</span><span class="hazlo" data-t="bl.1.h">Hazlo así: Activa el bloqueo automático en menos de 1 minuto. Quien tome tu teléfono no debe poder abrirlo.</span></span></label></li>
+    <li class="paso-item"><label><input type="checkbox" data-paso><span><b data-t="bl.2.t">2. Verificación en dos pasos de WhatsApp</b>
+      <span class="por-que" data-t="bl.2.p">Por qué te cuida: Sin este PIN, otra persona puede quedarse con tu WhatsApp.</span><span class="hazlo" data-t="bl.2.h">Hazlo así: En WhatsApp: Ajustes · Cuenta · Verificación en dos pasos. Pon un PIN que solo tú sepas.</span></span></label></li>
+    <li class="paso-item"><label><input type="checkbox" data-paso><span><b data-t="bl.3.t">3. No compartas códigos con nadie</b>
+      <span class="por-que" data-t="bl.3.p">Por qué te cuida: Ese código es la llave de tu cuenta: quien lo tiene, entra.</span><span class="hazlo" data-t="bl.3.h">Hazlo así: El código de 6 dígitos que te llega por SMS es solo tuyo. Ni tu banco ni WhatsApp te lo van a pedir por mensaje o llamada.</span></span></label></li>
+    <li class="paso-item"><label><input type="checkbox" data-paso><span><b data-t="bl.4.t">4. Contraseña distinta para tu correo</b>
+      <span class="por-que" data-t="bl.4.p">Por qué te cuida: Si roban tu correo, roban todo lo que se recupera con él.</span><span class="hazlo" data-t="bl.4.h">Hazlo así: Tu correo es la llave de todo lo demás. Ponle una contraseña larga que no uses en ningún otro lado.</span></span></label></li>
+    <li class="paso-item"><label><input type="checkbox" data-paso><span><b data-t="bl.5.t">5. Verificación en dos pasos de tu correo y tu banco</b>
+      <span class="por-que" data-t="bl.5.p">Por qué te cuida: Aunque adivinen tu contraseña, el segundo paso los detiene.</span><span class="hazlo" data-t="bl.5.h">Hazlo así: Actívala en tu correo y en la app de tu banco. Busca la opción en Ajustes o Seguridad de cada app.</span></span></label></li>
+    <li class="paso-item"><label><input type="checkbox" data-paso><span><b data-t="bl.6.t">6. Teléfono y aplicaciones al día</b>
+      <span class="por-que" data-t="bl.6.p">Por qué te cuida: Las versiones viejas tienen huecos que ya se conocen.</span><span class="hazlo" data-t="bl.6.h">Hazlo así: Instala las actualizaciones del teléfono y de WhatsApp. Muchos robos de cuenta entran por versiones viejas.</span></span></label></li>
+    <li class="paso-item"><label><input type="checkbox" data-paso><span><b data-t="bl.7.t">7. Una palabra clave con tu familia</b>
+      <span class="por-que" data-t="bl.7.p">Por qué te cuida: Es tu santo y seña familiar contra el «hijo, cambié de número».</span><span class="hazlo" data-t="bl.7.h">Hazlo así: Acuerda una palabra secreta con tu familia. Si alguien escribe pidiendo dinero, le preguntas la palabra antes de hacer nada.</span></span></label></li>
+  </ol>
+
+  <div class="insignia" id="insignia" hidden>
+    <img class="icono" width="56" height="56" src="insignia-blindar.png" data-t-alt="bl.insignia.alt" alt="Insignia de cuenta blindada" style="border-radius:12px;background:#fff">
+    <div><strong data-t="bl.insignia.t">Cuenta blindada</strong><span data-t="bl.insignia.p">Terminaste los 7 pasos.</span></div>
+  </div>
+  <p class="nota" data-t="bl.nota">Insignia generada con Muse Image (Meta Model API) el 30-oct-2026. Unaffiliated prototype — not a Meta product.</p>
+</main>
+<script>
+(function () {
+  'use strict';
+  var cajas = Array.prototype.slice.call(document.querySelectorAll('[data-paso]'));
+  function pintar() {
+    var n = cajas.filter(function (c) { return c.checked; }).length;
+    document.getElementById('n').textContent = n;
+    document.getElementById('barra').style.width = (n / 7 * 100) + '%';
+    document.getElementById('insignia').hidden = n !== 7;
+    try { localStorage.setItem('nelli-blindar', JSON.stringify(cajas.map(function (c) { return c.checked; }))); } catch (e) {}
+  }
+  try {
+    var guardado = JSON.parse(localStorage.getItem('nelli-blindar') || '[]');
+    cajas.forEach(function (c, i) { c.checked = !!guardado[i]; });
+  } catch (e) {}
+  cajas.forEach(function (c) { c.addEventListener('change', pintar); });
+  pintar();
+})();
+</script>
+</body>
+</html>

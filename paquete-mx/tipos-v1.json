@@ -1,0 +1,17 @@
+{"version": "v1", "fecha": "2026-10-26", "tipos": [
+  {"id": "banco_phishing", "nombre": "Aviso falso de banco", "senal": "banco"},
+  {"id": "paqueteria", "nombre": "Paquete retenido / envío", "senal": "paqueteria"},
+  {"id": "sat_impuestos", "nombre": "SAT / devolución de impuestos", "senal": "sat"},
+  {"id": "servicios_cfe", "nombre": "Corte de luz / servicios", "senal": "cfe"},
+  {"id": "premio_sorteo", "nombre": "Premio o sorteo", "senal": "premio"},
+  {"id": "prestamo_facil", "nombre": "Préstamo fácil / montadeudas", "senal": "prestamo"},
+  {"id": "inversion_cripto", "nombre": "Inversión con rendimiento garantizado", "senal": "inversion"},
+  {"id": "familiar_en_apuro", "nombre": "Familiar en apuro / «hola mamá» / secuestro virtual", "senal": "familiar_apuro"},
+  {"id": "extorsion", "nombre": "Extorsión o amenaza", "senal": "extorsion"},
+  {"id": "codigo_whatsapp", "nombre": "Robo del código de WhatsApp", "senal": "codigo_whatsapp"},
+  {"id": "empleo_falso", "nombre": "Empleo falso / tareas pagadas", "senal": "empleo"},
+  {"id": "aviso_falso_meta", "nombre": "Aviso falso de Meta a administradores de página", "senal": "aviso_meta"},
+  {"id": "compra_venta", "nombre": "Compra-venta con anticipo", "senal": "compra_venta"},
+  {"id": "otro", "nombre": "Otro", "senal": null},
+  {"id": "ninguno", "nombre": "Sin tipo", "senal": null}
+]}

@@ -1,0 +1,1056 @@
+{
+ "version": "v2",
+ "fecha": "2026-10-28",
+ "nota": "Los «nunca» v2: frase textual + liga oficial + fecha. verificado:true solo con fuente abierta el 27-oct o resguardo PDF del 28-oct (sin resguardos armados). Frases que no son «nunca» textual (Liverpool-correos, OXXO Pay, Profeco-remitente, Llave CDMX, SHEIN Brasil, cobranza DiDi) quedan fuera del «nunca» duro.",
+ "filas": [
+  {
+   "id": "bbva-datos",
+   "institucion": "BBVA México",
+   "nunca": "BBVA nunca te solicitará tus datos (NIP, contraseña, CVV, etc) por correo u otro medio.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.bbva.mx/personas/centro-de-ayuda/antifraude.html",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "bbva",
+    "bancomer"
+   ]
+  },
+  {
+   "id": "banorte-datos",
+   "institucion": "Banorte",
+   "nunca": "Te recordamos que nunca solicitamos datos personales ni credenciales de acceso por teléfono o correo, como son contraseñas, token, NIP, correo personal, contraseñas de correo, números de cuenta, tarjeta, códigos de seguridad; ni envía información sobre falta de sincronización de token.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.banorte.com/Preferente/Seguridad.html",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "banorte"
+   ]
+  },
+  {
+   "id": "banamex-datos",
+   "institucion": "Banamex",
+   "nunca": "Nunca pediremos datos sensibles como tu NIP, contraseñas, claves de NetKey® o códigos SMS; ni dar de alta cuentas o hacer transferencias para supuestamente proteger tu dinero.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.banamex.com/centro-de-seguridad/index.html",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "banamex",
+    "citibanamex"
+   ]
+  },
+  {
+   "id": "hsbc-datos",
+   "institucion": "HSBC México",
+   "nunca": "Recuerda que ningún colaborador de HSBC te solicitará vía telefónica u otros medios datos sensibles como: Información de tu tarjeta como el número, NIP o fecha de vencimiento; Código de seguridad (CVV); Usuarios y contraseñas de tus canales digitales; Código único de Token Móvil o Token Físico; Cualquier otra información personal o financiera.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.hsbc.com.mx/digital/seguridad-en-linea/",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "hsbc"
+   ]
+  },
+  {
+   "id": "scotiabank-datos",
+   "institucion": "Scotiabank México",
+   "nunca": "Datos que Scotiabank nunca te pedirá por llamadas o mensajes sospechosos. Desconfía si recibes una llamada o mensaje donde te solicitan: NIP o códigos de seguridad; Contraseñas; CVV físico o digital; Código de retiro sin tarjeta; Número de tarjeta; Número de cuenta; e-Llave; Datos personales como nombre completo, fecha de nacimiento, domicilio, teléfono, RFC o CURP, salvo dentro de canales oficiales y procesos correspondientes.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.scotiabank.com.mx/seguridad.aspx",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "scotiabank",
+    "scotia"
+   ]
+  },
+  {
+   "id": "inbursa-datos",
+   "institucion": "Inbursa",
+   "nunca": "Nunca te pediremos información confidencial, y tampoco la compartas con nadie. Desconfía si recibes una llamada o mensaje donde te soliciten cualquiera de la siguiente información: Número de cuenta; Número de Tarjeta; Folio de cheque digital y el código de seguridad; Correo electrónico; Número CVV de tu tarjeta; Contraseñas; NIP o códigos de seguridad",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.inbursa.com/sites/gfi/seguridad",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "inbursa"
+   ]
+  },
+  {
+   "id": "azteca-datos",
+   "institucion": "Banco Azteca",
+   "nunca": "Recuerda Banco Azteca NUNCA pedirá información confidencial por correo, mensaje o teléfono, si recibes una llamada cuelga y comunicate a la Línea Azteca: 55 5447 8810.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.bancoazteca.com.mx/edu-fin/tus-finanzas/finanzas-personales/credito/phishing-y-vishing.html",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "banco azteca",
+    "azteca"
+   ]
+  },
+  {
+   "id": "bancoppel-datos",
+   "institucion": "BanCoppel",
+   "nunca": "BanCoppel no solicita datos de tus cuentas por llamada, mensaje o correo electrónico.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.bancoppel.com/pdf/Llamadas_fraudulentas.pdf",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "bancoppel",
+    "coppel"
+   ]
+  },
+  {
+   "id": "afirme-datos",
+   "institucion": "Afirme",
+   "nunca": "Estimado Cliente: le informamos que Afirme Grupo Financiero NO solicita vía telefónica o correo electrónico información confidencial como “datos de cuenta bancaria”, “claves o contraseñas”, “acceso a sus equipos de cómputo” o “descargar algún software”.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.afirme.com/articulos/detallearticulo/Aviso-de-Seguridad",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "afirme"
+   ]
+  },
+  {
+   "id": "nu-datos",
+   "institucion": "Nu México",
+   "nunca": "En Nu nunca te pediremos tu NIP, contraseñas, códigos de verificación SMS, que hagas transferencias a “cuentas seguras” ni que descargues apps de soporte remoto; estas son señales claras de un fraude, ya que ninguna institución financiera regulada pide datos sensibles bajo la justificación de proteger tu cuenta.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://blog.nu.com.mx/seguridad-en-linea/consejos-de-seguridad/cosas-que-nu-nunca-pedira/",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "nu",
+    "nubank",
+    "moradita"
+   ]
+  },
+  {
+   "id": "spin-datos",
+   "institucion": "Spin by OXXO",
+   "nunca": "Spin by OXXO nunca solicitará datos personales para realizar transacciones en tu aplicación o con tu tarjeta.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://spinbyoxxo.com.mx/consejos-de-seguridad",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "spin",
+    "oxxo"
+   ]
+  },
+  {
+   "id": "stori-datos",
+   "institucion": "Stori",
+   "nunca": "Stori usa protocolos de seguridad y cifrado que resguardan tus datos. Además, nadie de nuestro equipo te pedirá jamás contraseñas o códigos de verificación.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.storicard.com/blog/antifraude",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "stori"
+   ]
+  },
+  {
+   "id": "klar-datos",
+   "institucion": "Klar",
+   "nunca": "Para brindarte atención y soporte, nunca te solicitaremos tu contraseña ni ningún código de validación.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.klar.mx/post/como-prevenir-fraudes-con-klar",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "klar"
+   ]
+  },
+  {
+   "id": "uala-datos",
+   "institucion": "Ualá",
+   "nunca": "Nunca nadie de Ualá te pedirá por mail, redes sociales, de forma telefónica ni por otro medio las claves que utilizas para operar en la aplicación. Tampoco te pediremos los datos que están en tu tarjeta.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.uala.mx/seguridad",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "uala"
+   ]
+  },
+  {
+   "id": "compartamos-datos",
+   "institucion": "Banco Compartamos",
+   "nunca": "Recuerda que en Compartamos Banco nunca te pediremos NIP ni Contraseñas por llamada, correo ni redes sociales.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.compartamos.com.mx/prevencion-fraudes/",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "compartamos"
+   ]
+  },
+  {
+   "id": "mercadopago-descarga",
+   "institucion": "Mercado Pago",
+   "nunca": "No descargues archivos adjuntos de un e-mail ni instales programas en tu teléfono o computadora, nunca te pediremos que lo hagas.",
+   "detecta": {
+    "senal": "pide_descarga"
+   },
+   "fuente": "https://www.mercadopago.com.mx/seguridad",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "mercado pago",
+    "mercadopago"
+   ]
+  },
+  {
+   "id": "bienestar-banco-datos",
+   "institucion": "Banco del Bienestar",
+   "nunca": "Recuerda que el #BancoDelBienestar no otorga préstamos ni solicita información a través de redes sociales.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.gob.mx/bancodelbienestar/articulos/aviso-importante-376024?idiom=es",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "banco del bienestar",
+    "bancodelbienestar"
+   ]
+  },
+  {
+   "id": "banco-datos",
+   "institucion": "Bancos (todos)",
+   "nunca": "Las empresas y bancos NUNCA te van a solicitar tus datos financieros o números de tarjetas de crédito por teléfono o internet, cuando no seas tú quien inicie una operación.",
+   "detecta": {
+    "senal": "banco",
+    "y": [
+     "pide_datos_sensibles"
+    ]
+   },
+   "fuente": "https://phpapps.condusef.gob.mx/fraudes_financieros/informate.php",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "nota": "Respaldo general CONDUSEF: falta decidir si confirma para bancos sin frase propia."
+  },
+  {
+   "id": "santander-datos",
+   "institucion": "Santander México",
+   "nunca": "Nunca te pediremos tus claves o coordenadas, ni por llamada, SMS o correo.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.santander.com.mx/personas/informacion-y-ayuda/centro-de-seguridad/seguridad-en-linea/",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "santander"
+   ]
+  },
+  {
+   "id": "santander-supertoken",
+   "institucion": "Santander México",
+   "nunca": "Nunca te pediremos datos de seguridad ni códigos de un solo uso como SuperToken.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.santander.com.mx/personas/informacion-y-ayuda/centro-de-seguridad/seguridad-en-linea/",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "marcas": [
+    "santander"
+   ],
+   "nota": "Resguardo armado (DOM desplegado): pendiente de revisión humana."
+  },
+  {
+   "id": "banregio-datos",
+   "institucion": "Banregio",
+   "nunca": "Nunca te solicitaremos datos personales, contraseñas o claves por ningún medio",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.banregio.com/conoce-mas/seguridad-digital.php",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "marcas": [
+    "banregio"
+   ],
+   "nota": "Resguardo armado (DOM desplegado): pendiente de revisión humana."
+  },
+  {
+   "id": "banbajio-correo",
+   "institucion": "BanBajío",
+   "nunca": "Nosotros no solicitaremos contraseñas o datos sensibles por correo.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.bb.com.mx/webcenter/portal/BanBajio/seguridad",
+   "fecha": "2026-10-28",
+   "verificado": false,
+   "marcas": [
+    "banbajio",
+    "bajio"
+   ],
+   "nota": "Resguardo armado (DOM desplegado): pendiente de revisión humana."
+  },
+  {
+   "id": "banbajio-contrato",
+   "institucion": "BanBajío",
+   "nunca": "“EL CLIENTE” reconoce que “EL BANCO” nunca lo contactará por teléfono, correo, mensajes SMS, servicios de mensajería o redes sociales para solicitarle información de sus claves",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.bb.com.mx/cs/BanBajio/home/contrato-banca-por-internet.pdf",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "banbajio",
+    "bajio"
+   ]
+  },
+  {
+   "id": "hey-datos",
+   "institucion": "Hey Banco",
+   "nunca": "Recuerda que Hey Banco NO le contactará a través de correo, SMS o llamadas para solicitar datos confidenciales como: acceso, contraseña, token, NIP, CVV o códigos de autenticación enviados por la institución.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://banco.hey.inc/blog-hey/articulos/consejos-y-vida-financiera/12-recomendaciones-de-seguridad-contra-el-fraude-y-robo-de-identidad",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "hey banco",
+    "hey"
+   ]
+  },
+  {
+   "id": "openbank-claves",
+   "institucion": "Openbank México",
+   "nunca": "Openbank nunca te solicitará tus claves completas por ningún medio.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.openbank.mx/blog/como-crear-contrasenas-seguras",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "openbank"
+   ],
+   "nota": "Dice «claves completas»: puede pedir una parte de la clave."
+  },
+  {
+   "id": "rappicard-datos",
+   "institucion": "RappiCard",
+   "nunca": "Ningún representante de RappiCard te pedirá tu NIP, contraseña completa ni el CVV dinámico por ningún canal.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://rappicard.mx/2026/07/05/cual-es-el-el-canal-de-atencion-a-clientes-rappicard/",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "rappicard",
+    "rappi"
+   ]
+  },
+  {
+   "id": "didi-finanzas-datos",
+   "institucion": "DiDi Card / DiDi Finanzas",
+   "nunca": "Antes que nada: DiDi Finanzas nunca te pedirá contraseña, ni códigos de verificación por llamada, SMS, WhatsApp o correo electrónico. Si recibes este tipo de comunicación es fraude.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://didifinance.com/blog/episodio-9-disfruta-el-paisaje-con-didi-cuidate-de-los-fraudes-financieros",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "didi"
+   ]
+  },
+  {
+   "id": "liverpool-datos",
+   "institucion": "Liverpool",
+   "nunca": "Recuerda: Liverpool nunca te solicitará datos confidenciales por llamada.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://assetsmcprob.liverpool.com.mx/images/seo/card_detail/financialEducation/EF%20Completo.pdf",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "liverpool"
+   ]
+  },
+  {
+   "id": "temu-datos",
+   "institucion": "Temu",
+   "nunca": "En las comunicaciones legítimas de Temu, nunca se te solicitará tu contraseña o información personal a través de redes sociales u otros canales no oficiales.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.temu.com/mx/support/c3/denuncia-algo-sospechoso-f-208-s-1841.html",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "temu"
+   ]
+  },
+  {
+   "id": "uber-datos",
+   "institucion": "Uber",
+   "nunca": "El personal de Uber nunca te contactará por correo electrónico o teléfono para pedirte información de tu cuenta, como la contraseña o información financiera.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://help.uber.com/es/riders/article/qu%C3%A9-puedo-hacer-para-proteger-mi-cuenta?nodeId=8e3abfb4-5e9b-46d0-801c-f445be124f39",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "uber"
+   ],
+   "nota": "Fuente: ayuda oficial de Uber (help.uber.com)."
+  },
+  {
+   "id": "renapo-gratuito",
+   "institucion": "RENAPO / CURP",
+   "nunca": "Todos los servicios para la asignación y gestión de CURP son completamente gratuitos, cualquier intento de cobro sobre alguno de los servicios debe ser denunciado ante el Órgano Interno de Control de la Secretaría de Gobernación.",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.gob.mx/cms/uploads/attachment/file/681698/reglas_para_la_ejecucion_de_los_procedimientos_asignacion_de_la_curp.pdf",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "curp",
+    "renapo"
+   ]
+  },
+  {
+   "id": "sict-venta",
+   "institucion": "SICT",
+   "nunca": "La Secretaría de Infraestructura, Comunicaciones y Transportes hace del conocimiento que no realiza venta de vehículos, ni de algún otro bien mueble, por medio de páginas electrónicas, mucho menos cuenta con gestores para llevar a cabo este tipo de operaciones.",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.gob.mx/sict/articulos/aviso-importante-de-la-sict-308860?idiom=es",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "sict",
+    "licencia federal"
+   ]
+  },
+  {
+   "id": "profeco-verificador",
+   "institucion": "Profeco",
+   "nunca": "Se recuerda que ningún verificador o empleado de la Profeco puede solicitar o realizar algún pago en efectivo o especie; además de que deben identificarse con credencial vigente con fotografía, expedida por la autoridad que lo acredite para desempeñar dicha función.",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.gob.mx/profeco/prensa/pide-profeco-denunciar-a-supuesto-personal-de-la-dependencia?idiom=es",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "profeco"
+   ],
+   "nota": "Dirigida a negocios (falsos verificadores)."
+  },
+  {
+   "id": "banxico-depositos",
+   "institucion": "Banxico",
+   "nunca": "Es decir, no celebra transacciones u operaciones financieras con particulares, por lo cual no solicita a ninguna persona depósitos de dinero o entrega de documentos, ni les requiere realizar trámites en sus oficinas o con sus funcionarios; tampoco ofrece créditos, inversiones o productos financieros.",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.banxico.org.mx/footer-es/d/%7B3957FF81-E525-18BE-8A18-4DB18F405FDF%7D.pdf",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "banxico",
+    "codi",
+    "dimo",
+    "spei"
+   ],
+   "nota": "Habla de depósitos y créditos; no menciona contraseñas ni códigos."
+  },
+  {
+   "id": "cnbv-depositos",
+   "institucion": "CNBV",
+   "nunca": "Es importante que sepas que esta Comisión NUNCA solicita depósitos por ninguna vía (correo electrónico, vía telefónica, correo postal, redes sociales).",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.gob.mx/cnbv/articulos/cnbv-alerta-sobre-correo-falso-solicitando-depositos",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "cnbv"
+   ],
+   "nota": "Aviso de 2018, sigue publicado."
+  },
+  {
+   "id": "condusef-propia",
+   "institucion": "CONDUSEF",
+   "nunca": "Es importante aclarar que la CONDUSEF no inicia ni atiende procedimientos formales de queja mediante este tipo de correos electrónicos, ni solicita datos personales o documentación a través de enlaces no oficiales.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.gob.mx/condusef/articulos/alerta-a-la-poblacion-circulan-correos-electronicos-falsos-suplantando-la-identidad-de-la-condusef",
+   "fecha": "2026-10-28",
+   "verificado": true,
+   "marcas": [
+    "condusef"
+   ]
+  },
+  {
+   "id": "mercadolibre-datos",
+   "institucion": "Mercado Libre",
+   "nunca": "No compartas tus datos personales por e-mail, teléfono ni mensaje de texto: nunca vamos a pedir información personal, como tu número de tarjeta de crédito, identificación, claves de seguridad o número de identificación fiscal por estos medios.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://vendedores.mercadolibre.com.mx/nota/utiliza-de-forma-segura-nuestra-plataforma-de-mercado-libre",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "mercado libre",
+    "mercadolibre"
+   ]
+  },
+  {
+   "id": "amazon-datos",
+   "institucion": "Amazon México",
+   "nunca": "Amazon nunca te solicitará por mensaje de texto que proporciones información personal, detalles de pago, códigos de tarjetas de regalo ni que llames a un número de teléfono.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=T2W6VB0DExBF3oyVvx",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "amazon"
+   ]
+  },
+  {
+   "id": "facebook-datos",
+   "institucion": "Meta / Facebook",
+   "nunca": "Los representantes de Meta nunca solicitarán dinero ni pedirán contraseñas, detalles de pago ni otros tipos de información sensible por chat o correo electrónico.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.facebook.com/help/phishing?locale=es_LA",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "facebook",
+    "meta"
+   ]
+  },
+  {
+   "id": "instagram-dm",
+   "institucion": "Instagram",
+   "nunca": "Instagram nunca te enviará mensajes directos sobre tu cuenta en la app de la plataforma.",
+   "detecta": {
+    "senal": "aviso_meta"
+   },
+   "fuente": "https://help.instagram.com/514187739359208?locale=es_LA",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "instagram"
+   ]
+  },
+  {
+   "id": "wa-codigo",
+   "institucion": "WhatsApp",
+   "nunca": "Nunca compartas tu código de registro con otras personas, ni siquiera con tus familiares o amigos.",
+   "detecta": {
+    "senal": "codigo_whatsapp"
+   },
+   "fuente": "https://faq.whatsapp.com/1131652977717250/?locale=es_LA",
+   "fecha": "2026-10-27",
+   "verificado": true
+  },
+  {
+   "id": "meta-aviso-chat",
+   "institucion": "Meta / Facebook",
+   "nunca": "Meta no avisa por Messenger, WhatsApp ni SMS que una página será desactivada con una liga para «apelar»; los avisos aparecen dentro de la app (Soporte / Estado de la cuenta).",
+   "detecta": {
+    "senal": "aviso_meta"
+   },
+   "fuente": "https://www.facebook.com/help/phishing?locale=es_LA",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "nota": "Frase de apoyo: representantes de Meta nunca piden datos ni dinero por mensaje o correo (misma fuente)."
+  },
+  {
+   "id": "google-datos",
+   "institucion": "Google",
+   "nunca": "Google nunca lo llamará para hablar sobre la seguridad de su cuenta, pedirle contraseñas ni solicitarle que lea un código de verificación o apruebe un mensaje del dispositivo por teléfono.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://support.google.com/faqs/answer/17170932?hl=es-419",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "google",
+    "gmail"
+   ]
+  },
+  {
+   "id": "apple-datos",
+   "institucion": "Apple",
+   "nunca": "Apple nunca te pedirá que inicies sesión en ningún sitio web; que toques el botón de aceptar en el cuadro de diálogo de autenticación de dos factores; que proporciones tu contraseña, el código de acceso del dispositivo ni el código de autenticación de dos factores, ni que los ingreses en ningún sitio web.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://support.apple.com/es-mx/102568",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "apple",
+    "icloud"
+   ]
+  },
+  {
+   "id": "microsoft-soporte",
+   "institucion": "Microsoft",
+   "nunca": "Microsoft no envía mensajes de correo electrónico no solicitados ni realiza llamadas de teléfono no solicitadas para solicitar información personal o financiera, ni para proporcionar soporte técnico para reparar el equipo. Si no nos lo pidió, no lo llamaremos para ofrecer soporte técnico.",
+   "detecta": {
+    "senal": "soporte_falso"
+   },
+   "fuente": "https://support.microsoft.com/es-es/office/protect-yourself-from-tech-support-scams",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "microsoft"
+   ]
+  },
+  {
+   "id": "netflix-datos",
+   "institucion": "Netflix",
+   "nunca": "Nunca te solicitaremos información personal por email o mensaje de texto. Esto incluye lo siguiente: Número de una tarjeta de crédito o débito; Detalles de cuenta bancaria; Contraseña de Netflix",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://help.netflix.com/es/node/65674",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "netflix"
+   ]
+  },
+  {
+   "id": "coppel-datos",
+   "institucion": "Coppel",
+   "nunca": "Grupo Coppel nunca solicita información personal ni referente a tus cuentas por llamadas, mensajes de texto o correo electrónico.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.coppel.com/blog/opiniones/consejos-para-prevenir-fraudes-digitales-pb/",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "coppel"
+   ]
+  },
+  {
+   "id": "dhl-dinero",
+   "institucion": "DHL",
+   "nunca": "De ninguna manera la empresa pide depósitos o transferencias a cuentas bancarias ajenas a DHL Express México S. A. de C.V, por lo que, si recibe este tipo de requerimientos, le pedimos que haga caso omiso, pues podría tratarse de un fraude.",
+   "detecta": {
+    "senal": "paqueteria",
+    "y": [
+     "pide_dinero"
+    ]
+   },
+   "fuente": "https://www.dhl.com/mx-es/home/pie-de-pagina/conocimiento-sobre-fraudes.html",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "dhl"
+   ]
+  },
+  {
+   "id": "estafeta-pago",
+   "institucion": "Estafeta",
+   "nunca": "Recuerda que Estafeta NUNCA solicita un pago adicional al destinatario para recibir su envío.",
+   "detecta": {
+    "senal": "paqueteria",
+    "y": [
+     "pide_dinero"
+    ]
+   },
+   "fuente": "https://www.estafeta.com/ciberseguridad",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "estafeta"
+   ]
+  },
+  {
+   "id": "fedex-datos",
+   "institucion": "FedEx",
+   "nunca": "FedEx® no envía mensajes de texto o correo electrónico no solicitados a clientes pidiendo dinero o información personal a cambio de paquetes en tránsito o en posesión de FedEx®. Tampoco solicita información mediante llamadas telefónicas ni códigos de verificación por SMS o Whatsapp® .",
+   "detecta": {
+    "senal": "paqueteria",
+    "y": [
+     "pide_datos_sensibles",
+     "pide_dinero"
+    ]
+   },
+   "fuente": "https://www.fedex.com/es-mx/trust-center/report-fraud.html",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "fedex"
+   ]
+  },
+  {
+   "id": "ups-datos",
+   "institucion": "UPS",
+   "nunca": "Tenga en cuenta que UPS no solicita pagos, información personal, información financiera, números de cuenta, identificaciones, contraseñas ni copias de facturas de manera no solicitada a través de correo electrónico, correo postal, teléfono o fax, ni específicamente a cambio del transporte de bienes o servicios.",
+   "detecta": {
+    "senal": "paqueteria",
+    "y": [
+     "pide_datos_sensibles",
+     "pide_dinero"
+    ]
+   },
+   "fuente": "https://www.ups.com/mx/es/support/shipping-support/legal-terms-conditions/fight-fraud",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "ups"
+   ]
+  },
+  {
+   "id": "telcel-nip",
+   "institucion": "Telcel",
+   "nunca": "Telcel y sus empleados nunca le llamarán para solicitarle que proporcione su NIP Telefónico de forma oral o escrita.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.telcel.com/personas/atencion-a-clientes/puntos-de-contacto/telefono",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "telcel"
+   ]
+  },
+  {
+   "id": "att-datos",
+   "institucion": "AT&T México",
+   "nunca": "AT&T nunca llama a sus clientes para solicitarles claves o NIP de portabilidad para ningún trámite.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.att.com.mx/noticias/att-nip-de-portabilidad-cuidarlo.html",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "at&t",
+    "att"
+   ]
+  },
+  {
+   "id": "telmex-datos",
+   "institucion": "Telmex",
+   "nunca": "En Telmex estamos comprometidos con la seguridad de nuestros clientes, por eso, te recordamos que en los correos electrónicos que enviamos no solicitamos datos adicionales; además, para mayor seguridad, la consulta, pago y descarga de tu recibo lo puedes hacer directamente en Mi Telmex.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://telmex.com/web/asistencia/protegete-del-phishing",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "telmex"
+   ]
+  },
+  {
+   "id": "izzi-datos",
+   "institucion": "izzi",
+   "nunca": "Recuerda que en izzi no te contactaremos para solicitarte por ningún medio datos de tu tarjeta de crédito, débito u otra información bancaria.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://ayudaizzi.izzi.mx/hc/es/articles/4415817803546-Realiza-la-domiciliaci%C3%B3n-de-tus-pagos",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "izzi"
+   ]
+  },
+  {
+   "id": "totalplay-datos",
+   "institucion": "Totalplay",
+   "nunca": "¡Cuidado!, es una estafa, nosotros nunca te pediremos datos confidenciales, cambios de contraseña ni mucho menos pagos a referencias personales.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.totalplay.com.mx/prevencion-de-fraudes",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "totalplay"
+   ]
+  },
+  {
+   "id": "sat-datos",
+   "institucion": "Servicio de Administración Tributaria (SAT)",
+   "nunca": "el SAT no distribuye software ni solicita ejecutar o guardar archivos, tampoco requiere de información personal, claves o contraseñas vía correo electrónico",
+   "detecta": {
+    "senal": "sat",
+    "y": [
+     "pide_datos_sensibles",
+     "liga"
+    ]
+   },
+   "fuente": "https://www.sat.gob.mx/minisitio/BuscadorCorreosFalsos/buscador.html",
+   "fecha": "2026-10-27",
+   "verificado": true
+  },
+  {
+   "id": "sat-mensajeria",
+   "institucion": "SAT",
+   "nunca": "El SAT no envía requerimientos ni devoluciones por WhatsApp ni por SMS con ligas; usa el Buzón Tributario.",
+   "detecta": {
+    "senal": "sat",
+    "y": [
+     "pide_datos_sensibles",
+     "pide_dinero",
+     "liga"
+    ]
+   },
+   "fuente": "https://www.sat.gob.mx/minisitio/BuscadorCorreosFalsos/buscador.html",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "nota": "Resumen de la fuente del SAT (buscador de correos falsos); la detección dura es sat-datos."
+  },
+  {
+   "id": "imss-gratuito",
+   "institucion": "Instituto Mexicano del Seguro Social (IMSS)",
+   "nunca": "En el IMSS todos los trámites son gratuitos, de fácil acceso",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.imss.gob.mx/prensa/archivo/202210/512",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "imss"
+   ]
+  },
+  {
+   "id": "issste-pago",
+   "institucion": "Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (ISSSTE)",
+   "nunca": "tampoco contacta a ningún derechohabiente a través del celular ni pide dinero a cambio de alguna otra prestación.",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.gob.mx/issste/prensa/llama-issste-a-no-caer-en-estafas-de-paquetes-turisticos-por-redes-sociales-y-apps-de-mensajeria-instantanea?idiom=es-MX",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "issste"
+   ]
+  },
+  {
+   "id": "infonavit-gratuito",
+   "institucion": "Instituto del Fondo Nacional de la Vivienda para los Trabajadores (Infonavit)",
+   "nunca": "En el Infonavit, todos los trámites son gratuitos.",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://portalmx.infonavit.org.mx/wps/wcm/connect/cc6dbaf9-6dac-4172-af8c-cfde437feab9/Infografia_Prevencion_Fraudes.pdf?MOD=AJPERES",
+   "fecha": "2026-10-27",
+   "verificado": false,
+   "marcas": [
+    "infonavit"
+   ],
+   "nota": "No se pudo abrir el portal el 27-oct: pendiente de revisión humana."
+  },
+  {
+   "id": "fovissste-gratuito",
+   "institucion": "Fondo de la Vivienda del ISSSTE (FOVISSSTE)",
+   "nunca": "Todos los trámites del FOVISSSTE son gratuitos.",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://fovissste.gob.mx/noticias/notas/actualiza-tus-datos-y-accede-a-los-beneficios/",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "fovissste"
+   ]
+  },
+  {
+   "id": "cfe-banco",
+   "institucion": "Comisión Federal de Electricidad (CFE)",
+   "nunca": "El personal de la CFE no pedirá información bancaria en campañas publicitarias, ni sumas de dinero transferidas a cuentas personales bajo ningún concepto.",
+   "detecta": {
+    "senal": "cfe",
+    "y": [
+     "pide_dinero"
+    ]
+   },
+   "fuente": "https://app.cfe.mx/Aplicaciones/OTROS/Boletines/boletin?i=10410",
+   "fecha": "2026-10-27",
+   "verificado": true
+  },
+  {
+   "id": "cfe-deposito",
+   "institucion": "CFE",
+   "nunca": "La CFE no cobra por WhatsApp ni pide depósitos a cuentas personales; atiende en el 071 y en cfe.mx.",
+   "detecta": {
+    "senal": "cfe",
+    "y": [
+     "pide_dinero"
+    ]
+   },
+   "fuente": "https://app.cfe.mx/Aplicaciones/OTROS/Boletines/boletin?i=10410",
+   "fecha": "2026-10-27",
+   "verificado": true
+  },
+  {
+   "id": "bienestar-cobro",
+   "institucion": "Programas Bienestar",
+   "nunca": "Nadie puede cobrar por un registro, trámite, entrega de tarjeta o ingreso a un apoyo.",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/evita-fraudes-los-tramites-de-los-programas-para-el-bienestar-son-gratuitos-y-sin-intermediarios",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "bienestar",
+    "pension"
+   ]
+  },
+  {
+   "id": "becas-dinero",
+   "institucion": "Becas Benito Juárez",
+   "nunca": "La Coordinación Nacional de Becas para el Bienestar Benito Juárez no realiza rifas ni sorteos y NO SOLICITA DINERO NI DEPÓSITOS para obtener una beca.",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.gob.mx/becasbenitojuarez/prensa/circulan-nuevas-formas-de-extorsion-a-becarios",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "beca",
+    "becas"
+   ]
+  },
+  {
+   "id": "sre-citas",
+   "institucion": "SRE / pasaportes",
+   "nunca": "la programación de citas para la expedición de pasaportes es un proceso completamente gratuito",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.gob.mx/sre/prensa/advierte-la-sre-sobre-sitios-fraudulentos-que-ofrecen-citas-para-la-expedicion-de-pasaportes",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "pasaporte",
+    "sre"
+   ]
+  },
+  {
+   "id": "ine-llamadas",
+   "institucion": "Instituto Nacional Electoral (INE)",
+   "nunca": "El INE no hace llamadas a la ciudadanía.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://centralelectoral.ine.mx/2024/03/26/aclaracion-el-ine-no-realiza-llamadas-telefonicas-a-la-ciudadania-para-levantamiento-de-encuestas-ni-ha-contratado-servicios-para-medir-preferencias-electorales/",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "ine"
+   ]
+  },
+  {
+   "id": "sspc-datos",
+   "institucion": "SSPC / Guardia Nacional",
+   "nunca": "Ninguna autoridad solicitará números completos de tarjetas bancarias, códigos CVV, NIP, contraseñas o códigos de verificación.",
+   "detecta": {
+    "senal": "pide_datos_sensibles"
+   },
+   "fuente": "https://www.gob.mx/sspc/prensa/la-sspc-emite-recomendaciones-ante-mensajes-falsos-sobre-multas-de-transito",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "sspc",
+    "guardia nacional",
+    "policia cibernetica"
+   ]
+  },
+  {
+   "id": "finabien-pago",
+   "institucion": "Finabien",
+   "nunca": "no ofrece apoyo ni solicita algún tipo de depósito a ninguna cuenta bancaria",
+   "detecta": {
+    "senal": "pide_dinero"
+   },
+   "fuente": "https://www.gob.mx/finabien/prensa/financiera-para-el-bienestar-previene-contra-fraude-por-supuestos-prestamos-en-redes-sociales?idiom=es",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "finabien",
+    "telecomm"
+   ]
+  },
+  {
+   "id": "tesoreria-sms",
+   "institucion": "Tesorería CDMX",
+   "nunca": "La Secretaría de Administración y Finanzas NO ENVÍA MENSAJES DE TEXTO",
+   "detecta": {
+    "senal": "multa"
+   },
+   "fuente": "https://www.finanzas.cdmx.gob.mx/",
+   "fecha": "2026-10-27",
+   "verificado": true,
+   "marcas": [
+    "tesoreria",
+    "finanzas cdmx"
+   ],
+   "nota": "La Tesorería CDMX publica que no envía mensajes de texto."
+  }
+ ]
+}

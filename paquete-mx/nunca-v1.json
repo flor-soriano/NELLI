@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "fecha": "2026-10-26",
+  "nota": "Los «nunca» que cada institución publica. Si el mensaje pide justo eso, es prueba dura. `verificado: true` solo cuando una persona anotó la URL oficial donde la institución lo dice. Sin verificar → «Muy probablemente es fraude»; verificado → «Fraude confirmado».",
+  "filas": [
+    {"id": "wa-codigo", "institucion": "WhatsApp", "nunca": "WhatsApp pide que nunca compartas tu código de verificación de 6 dígitos, ni con familiares", "detecta": {"senal": "codigo_whatsapp"}, "fuente": "https://faq.whatsapp.com — artículo de seguridad sobre el código de verificación (URL exacta pendiente)", "fecha": "2026-10-26", "verificado": false},
+    {"id": "sat-mensajeria", "institucion": "SAT", "nunca": "El SAT no envía requerimientos ni devoluciones por WhatsApp ni por SMS con ligas; usa el Buzón Tributario", "detecta": {"senal": "sat", "canal": ["whatsapp", "sms"], "y": ["pide_datos_sensibles", "pide_dinero", "liga"]}, "fuente": "https://www.sat.gob.mx — alertas de fraude (URL exacta pendiente)", "fecha": "2026-10-26", "verificado": false},
+    {"id": "cfe-deposito", "institucion": "CFE", "nunca": "La CFE no cobra por WhatsApp ni pide depósitos a cuentas personales; atiende en el 071 y en cfe.mx", "detecta": {"senal": "cfe", "y": ["pide_dinero"]}, "fuente": "https://www.cfe.mx — aviso sobre fraudes (URL exacta pendiente)", "fecha": "2026-10-26", "verificado": false},
+    {"id": "banco-datos", "institucion": "Bancos (todos)", "nunca": "Ningún banco pide NIP, contraseña, CVV ni código por mensaje, liga o llamada", "detecta": {"senal": "banco", "y": ["pide_datos_sensibles"]}, "fuente": "CONDUSEF — campaña «Tu banco nunca te pedirá…» (URL exacta pendiente)", "fecha": "2026-10-26", "verificado": false},
+    {"id": "meta-aviso-chat", "institucion": "Meta / Facebook", "nunca": "Meta no avisa por Messenger, WhatsApp ni SMS que una página será desactivada con una liga para «apelar»; los avisos aparecen dentro de la app (Soporte / Estado de la cuenta)", "detecta": {"senal": "aviso_meta", "canal": ["whatsapp", "messenger", "sms", "email", "desconocido"]}, "fuente": "https://www.facebook.com/help — (URL exacta pendiente)", "fecha": "2026-10-26", "verificado": false},
+    {"id": "bienestar-cobro", "institucion": "Programas Bienestar", "nunca": "Los programas sociales no cobran por inscribir ni por entregar un apoyo", "detecta": {"senal": "suplantacion_gobierno", "y": ["pide_dinero"]}, "fuente": "https://www.gob.mx/bienestar — (URL exacta pendiente)", "fecha": "2026-10-26", "verificado": false}
+  ]
+}
